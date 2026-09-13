@@ -6,371 +6,212 @@
 
 :root {
   --verde-principal: #0b5d3b;
-  --verde-escuro: #06452f;
+  --verde-escuro: #124b36;
+  --verde-claro: #65875c;
   --verde-medio: #2f7d4a;
   --verde-suave: #6fa56f;
-  --verde-claro: #eef3e6;
 
   --off-white: #faf8f1;
   --creme: #f4f1e8;
   --branco: #ffffff;
+  --fundo: #f8f7f3;
 
   --texto-principal: #173b2d;
   --texto-secundario: #6f746e;
 }
+
 header {
   background-color: var(--off-white);
 }
 
-/* ======================================================
-   HERO
-====================================================== */
-
-.hero-section {
-  width: 100%;
-  background-color: var(--off-white);
-  padding: 0 24px 24px;
-}
-
-#heroCarousel {
+.banner {
   position: relative;
-  width: 100%;
-  height: 650px;
-
   overflow: hidden;
-
-  border-radius: 0 0 32px 32px;
+  background: var(--fundo);
 }
 
-/* ======================================================
-   IMAGENS
-====================================================== */
+.banner .carousel-item {
+  position: relative;
+  height: clamp(440px, 44vw, 650px);
+}
 
-.carousel-inner,
-.carousel-item {
+/* Fotografia ocupando o slide inteiro */
+.banner-foto {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
-}
-
-.hero-image {
-  width: 100%;
-  height: 650px;
-
   object-fit: cover;
-  object-position: center;
-
-  display: block;
+  object-position: center right;
 }
 
-/* ======================================================
-   OVERLAY DA IMAGEM
-====================================================== */
-
-.hero-overlay {
+/* Transição entre o fundo claro e a fotografia */
+.banner .carousel-item::after {
+  content: "";
   position: absolute;
-
   inset: 0;
-
-  z-index: 2;
-
-  pointer-events: none;
+  z-index: 1;
 
   background: linear-gradient(
-    90deg,
-    rgba(6, 69, 47, 0.94) 0%,
-    rgba(6, 69, 47, 0.83) 30%,
-    rgba(6, 69, 47, 0.45) 55%,
-    rgba(6, 69, 47, 0.08) 80%,
-    rgba(6, 69, 47, 0) 100%
+    to right,
+    var(--fundo) 0%,
+    var(--fundo) 27%,
+    rgba(248, 247, 243, 0.95) 34%,
+    rgba(248, 247, 243, 0.55) 44%,
+    rgba(248, 247, 243, 0) 60%
   );
 }
 
-/* ======================================================
-   CONTEÚDO
-====================================================== */
-
-.hero-container {
-  position: absolute;
-
-  inset: 0;
-
-  z-index: 3;
-
-  height: 100%;
+.banner-conteudo {
+  position: relative;
+  z-index: 2;
+  width: 46%;
+  padding: clamp(48px, 6vw, 90px) 0 0 6%;
 }
 
-.hero-container .row {
-  height: 100%;
-}
-
-.hero-content {
-  max-width: 610px;
-  color: var(--branco);
-}
-
-/* TAG */
-
-.hero-tag {
-  display: inline-flex;
-
-  align-items: center;
-
-  background-color: rgba(255, 255, 255, 0.14);
-
-  color: var(--branco);
-
-  padding: 8px 18px;
-
-  border: 1px solid rgba(255, 255, 255, 0.3);
-
-  border-radius: 30px;
-
-  backdrop-filter: blur(8px);
-
-  font-size: 14px;
-
-  font-weight: 500;
-
-  letter-spacing: 0.5px;
-
-  margin-bottom: 22px;
-}
-
-/* TÍTULO */
-
-.hero-content h1 {
-  font-size: clamp(42px, 5vw, 72px);
-
-  font-weight: 400;
-
-  line-height: 1.05;
-
-  letter-spacing: -2px;
-
-  margin-bottom: 24px;
-}
-
-.hero-content h1 strong {
-  display: block;
-
-  font-weight: 700;
-
+.banner-etiqueta {
   color: var(--verde-claro);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
 }
 
-/* TEXTO */
-
-.hero-content p {
-  max-width: 540px;
-
-  font-size: 18px;
-
-  line-height: 1.7;
-
-  font-weight: 400;
-
-  color: rgba(255, 255, 255, 0.87);
-
-  margin: 0;
+.banner-titulo {
+  color: var(--verde-escuro);
+  font-size: clamp(48px, 7.5vw, 100px);
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -2px;
+  margin-bottom: 16px;
 }
 
-/* ======================================================
-   SETAS
-====================================================== */
-
-.hero-control {
-  z-index: 5;
-
-  width: auto;
-
-  opacity: 1;
+.banner-subtitulo {
+  color: var(--verde-claro);
+  font-size: clamp(20px, 2.5vw, 32px);
+  font-weight: 700;
+  margin-bottom: 14px;
 }
 
-.hero-control span {
+.banner-descricao {
+  max-width: 340px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #454545;
+}
+
+.banner-detalhe {
   width: 48px;
-  height: 48px;
+  height: 3px;
+  margin-top: 24px;
+  background: var(--verde-claro);
+}
 
-  display: flex;
+/* Onda compartilhada pelos slides */
+.banner-onda {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 29%;
+  z-index: 3;
+  pointer-events: none;
+  fill: var(--verde-escuro);
+}
 
-  align-items: center;
-  justify-content: center;
-
-  background-color: var(--branco);
-
-  color: var(--verde-principal);
-
+/* Setas posicionadas na base */
+.banner .carousel-control-prev,
+.banner .carousel-control-next {
+  top: auto;
+  bottom: 20px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
-
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
-
-  transition: all 0.25s ease;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  z-index: 4;
 }
 
-.hero-control span:hover {
-  background-color: var(--verde-principal);
-
-  color: var(--branco);
-
-  transform: scale(1.07);
-}
-
-.hero-control-prev {
+.banner .carousel-control-prev {
   left: 28px;
 }
 
-.hero-control-next {
+.banner .carousel-control-next {
   right: 28px;
 }
 
-/* ======================================================
-   INDICADORES
-====================================================== */
-
-.hero-indicators {
-  z-index: 5;
-
-  margin-bottom: 28px;
-
-  gap: 8px;
+.banner .carousel-control-prev-icon,
+.banner .carousel-control-next-icon {
+  width: 18px;
+  height: 18px;
 }
 
-.hero-indicators [data-bs-target] {
-  width: 8px;
-  height: 8px;
+.banner .carousel-indicators {
+  bottom: 26px;
+  margin-bottom: 0;
+  z-index: 4;
+}
 
-  margin: 0;
-
-  border: none;
-
+.banner .carousel-indicators button {
+  box-sizing: border-box;
+  width: 13px;
+  height: 13px;
+  margin: 0 5px;
+  border: 2px solid white;
   border-radius: 50%;
+  background: transparent;
+  opacity: 0.6;
+}
 
-  background-color: rgba(255, 255, 255, 0.55);
-
+.banner .carousel-indicators button.active {
+  background: white;
   opacity: 1;
-
-  transition: all 0.3s ease;
 }
 
-.hero-indicators .active {
-  width: 28px;
-
-  border-radius: 10px;
-
-  background-color: var(--branco);
+.banner button:focus-visible {
+  outline: 3px solid #e7c96b;
+  outline-offset: 4px;
 }
 
-/* ======================================================
-   TRANSIÇÃO
-====================================================== */
-
-.carousel-fade .carousel-item {
-  transition: opacity 0.9s ease-in-out;
-}
-
-/* ======================================================
-   TABLET
-====================================================== */
-
-@media (max-width: 991px) {
-  #heroCarousel,
-  .hero-image {
-    height: 580px;
+/* Adaptação para celular */
+@media (max-width: 767.98px) {
+  .banner .carousel-item {
+    height: 650px;
   }
 
-  .hero-overlay {
+  .banner-foto {
+    object-position: 65% center;
+  }
+
+  .banner .carousel-item::after {
     background: linear-gradient(
-      90deg,
-      rgba(6, 69, 47, 0.92) 0%,
-      rgba(6, 69, 47, 0.74) 65%,
-      rgba(6, 69, 47, 0.35) 100%
+      to bottom,
+      var(--fundo) 0%,
+      rgba(248, 247, 243, 0.98) 35%,
+      rgba(248, 247, 243, 0.5) 57%,
+      transparent 75%
     );
   }
 
-  .hero-content {
-    padding: 0 35px;
+  .banner-conteudo {
+    width: 100%;
+    padding: 40px 26px 0;
   }
 
-  .hero-content h1 {
-    letter-spacing: -1px;
-  }
-}
-
-/* ======================================================
-   MOBILE
-====================================================== */
-
-@media (max-width: 767px) {
-  .hero-section {
-    padding: 0 12px 12px;
+  .banner-titulo {
+    font-size: clamp(42px, 12vw, 64px);
   }
 
-  #heroCarousel,
-  .hero-image {
-    height: 550px;
+  .banner-subtitulo {
+    font-size: 24px;
   }
 
-  #heroCarousel {
-    border-radius: 0 0 22px 22px;
+  .banner-descricao {
+    max-width: 330px;
   }
 
-  .hero-image {
-    object-position: center;
-  }
-
-  .hero-overlay {
-    background: linear-gradient(
-      0deg,
-      rgba(6, 69, 47, 0.96) 0%,
-      rgba(6, 69, 47, 0.83) 50%,
-      rgba(6, 69, 47, 0.38) 100%
-    );
-  }
-
-  .hero-container {
-    align-items: flex-end;
-  }
-
-  .hero-container .row {
-    align-items: flex-end !important;
-  }
-
-  .hero-content {
-    padding: 0 24px 85px;
-  }
-
-  .hero-tag {
-    font-size: 12px;
-
-    padding: 7px 14px;
-
-    margin-bottom: 16px;
-  }
-
-  .hero-content h1 {
-    font-size: 42px;
-
-    line-height: 1.05;
-
-    margin-bottom: 18px;
-  }
-
-  .hero-content p {
-    font-size: 15px;
-
-    line-height: 1.6;
-  }
-
-  .hero-control {
-    display: none;
-  }
-
-  .hero-indicators {
-    justify-content: flex-start;
-
-    margin-left: 24px;
-
-    margin-right: 0;
-
-    margin-bottom: 32px;
+  .banner-onda {
+    height: 18%;
   }
 }

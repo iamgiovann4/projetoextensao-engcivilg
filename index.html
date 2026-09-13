@@ -80,97 +80,17 @@
         </div>
       </div>
     </header>
-
-    <section class="hero-section">
-      <!-- CARROSSEL -->
-      <div
-        id="heroCarousel"
-        class="carousel slide carousel-fade"
-        data-bs-ride="carousel"
-        data-bs-interval="5000"
+    <main>
+      <section
+        id="bannerOlaria"
+        class="carousel slide carousel-fade banner"
+        aria-label="Projetos de extensão"
+        aria-roledescription="carrossel"
       >
-        <div class="carousel-inner">
-          <!-- Slide 1 -->
-          <div class="carousel-item active">
-            <img
-              src="https://plus.unsplash.com/premium_photo-1695477211448-8130bf04f763?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2lkYWRlJTIwZGUlMjBjaW1hfGVufDB8fDB8fHww"
-              class="hero-image"
-              alt="Projeto de Extensão Olaria"
-            />
-          </div>
-
-          <!-- Slide 2 -->
-          <div class="carousel-item">
-            <img
-              src="https://s2-casaejardim.glbimg.com/1p4m0wmOeZqS7tp3QnYgQQ84w7Q=/0x0:1400x811/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_a0b7e59562ef42049f4e191fe476fe7d/internal_photos/bs/2025/W/I/UqZrJvRve7dO8w7iMJIw/paragominas-11-cidades-brasileiras-com-formatos-surpreendentes-quando-vistas-de-cima.png"
-              class="hero-image"
-              alt="Atividades realizadas na Olaria"
-            />
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="carousel-item">
-            <img
-              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjS00iYqtdV90ethBi7F865zXayCCX3wB4k3dCQozLqxI4tZOYTKqvq5NdU03DL_HZF-rBGWA_PJC19DfTttvF9q_knb9tHF1ejA7KdoBQAGZrxxm2WB3TB9wE-n6unWbsgD5WlOWfzyKY/s1600/paris.png"
-              class="hero-image"
-              alt="Comunidade participante do projeto"
-            />
-          </div>
-        </div>
-
-        <!-- OVERLAY -->
-        <div class="hero-overlay"></div>
-
-        <!-- CONTEÚDO -->
-        <div class="container hero-container">
-          <div class="row h-100 align-items-center">
-            <div class="col-12 col-md-8 col-lg-6">
-              <div class="hero-content">
-                <span class="hero-tag"> Projeto de Extensão </span>
-
-                <h1>
-                  Projeto de Extensão
-                  <strong>Olaria</strong>
-                </h1>
-
-                <p>
-                  Educação, comunidade e transformação caminhando juntas para
-                  fortalecer vínculos e construir novas possibilidades.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- SETA ESQUERDA -->
-        <button
-          class="carousel-control-prev hero-control hero-control-prev"
-          type="button"
-          data-bs-target="#heroCarousel"
-          data-bs-slide="prev"
-        >
-          <span>
-            <i class="fa-solid fa-chevron-left"></i>
-          </span>
-        </button>
-
-        <!-- SETA DIREITA -->
-        <button
-          class="carousel-control-next hero-control hero-control-next"
-          type="button"
-          data-bs-target="#heroCarousel"
-          data-bs-slide="next"
-        >
-          <span>
-            <i class="fa-solid fa-chevron-right"></i>
-          </span>
-        </button>
-
-        <!-- INDICADORES -->
-        <div class="carousel-indicators hero-indicators">
+        <div class="carousel-indicators">
           <button
             type="button"
-            data-bs-target="#heroCarousel"
+            data-bs-target="#bannerOlaria"
             data-bs-slide-to="0"
             class="active"
             aria-current="true"
@@ -179,20 +99,110 @@
 
           <button
             type="button"
-            data-bs-target="#heroCarousel"
+            data-bs-target="#bannerOlaria"
             data-bs-slide-to="1"
             aria-label="Slide 2"
           ></button>
-
-          <button
-            type="button"
-            data-bs-target="#heroCarousel"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
         </div>
-      </div>
-    </section>
+
+        <div class="carousel-inner">
+          <!-- Primeiro slide -->
+          <div class="carousel-item active">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1695477211448-8130bf04f763?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2lkYWRlJTIwZGUlMjBjaW1hfGVufDB8fDB8fHww"
+              class="banner-foto"
+              alt="Casas do bairro Olaria cercadas por montanhas e vegetação"
+            />
+
+            <div class="banner-conteudo">
+              <p class="banner-etiqueta">Projeto de extensão</p>
+
+              <h1 class="banner-titulo">OLARIA</h1>
+
+              <h2 class="banner-subtitulo">IFSP Caraguatatuba</h2>
+
+              <p class="banner-descricao">
+                Conectando o IFSP à comunidade para gerar conhecimento,
+                desenvolvimento e transformação social.
+              </p>
+
+              <div class="banner-detalhe" aria-hidden="true"></div>
+            </div>
+          </div>
+
+          <!-- Segundo slide: conteúdo de exemplo -->
+          <div class="carousel-item">
+            <!-- Substitua por outra foto, se desejar -->
+            <img
+              src="https://s2-casaejardim.glbimg.com/1p4m0wmOeZqS7tp3QnYgQQ84w7Q=/0x0:1400x811/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_a0b7e59562ef42049f4e191fe476fe7d/internal_photos/bs/2025/W/I/UqZrJvRve7dO8w7iMJIw/paragominas-11-cidades-brasileiras-com-formatos-surpreendentes-quando-vistas-de-cima.png"
+              class="banner-foto"
+              alt="Vista do bairro Olaria"
+            />
+
+            <div class="banner-conteudo">
+              <p class="banner-etiqueta">Conhecimento em ação</p>
+
+              <h2 class="banner-titulo">CONEXÃO</h2>
+
+              <h3 class="banner-subtitulo">Instituto e comunidade</h3>
+
+              <p class="banner-descricao">
+                Aproximando estudantes e moradores para construir soluções e
+                novas oportunidades.
+              </p>
+
+              <div class="banner-detalhe" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Curva verde inferior -->
+        <svg
+          class="banner-onda"
+          viewBox="0 0 1440 180"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+        >
+          <path
+            d="M0,0
+             C180,110 260,115 430,112
+             C650,108 650,185 850,160
+             C1080,130 1210,115 1440,15
+             L1440,180
+             L0,180 Z"
+          />
+        </svg>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#bannerOlaria"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Slide anterior</span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#bannerOlaria"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo slide</span>
+        </button>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      new bootstrap.Carousel(document.querySelector("#bannerOlaria"), {
+        interval: false,
+        touch: true,
+      });
+    </script>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
@@ -200,8 +210,4 @@
     <!-- Seu JS -->
     <script src="main.js"></script>
   </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> f9f004fefa413759fe0765d3d852c009e477f716
