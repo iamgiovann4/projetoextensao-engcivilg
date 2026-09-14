@@ -129,8 +129,8 @@ body {
   z-index: 1;
   background: linear-gradient(
     to right,
-    var(--fundo) 0%,
-    var(--fundo) 28%,
+    var(--creme) 0%,
+    var(--creme) 28%,
     rgba(248, 247, 243, 0.94) 36%,
     rgba(248, 247, 243, 0.55) 48%,
     rgba(248, 247, 243, 0) 65%
