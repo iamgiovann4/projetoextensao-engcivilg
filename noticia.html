@@ -34,10 +34,19 @@
          CABEÇALHO / NAVEGAÇÃO
          ========================================================================== -->
     <header class="site-header sticky-top">
-      <nav class="navbar navbar-expand-lg navbar-light py-2 py-lg-3" aria-label="Navegação Principal">
-        <div class="container-xl d-flex align-items-center justify-content-between">
+      <nav
+        class="navbar navbar-expand-lg navbar-light py-2 py-lg-3"
+        aria-label="Navegação Principal"
+      >
+        <div
+          class="container-xl d-flex align-items-center justify-content-between"
+        >
           <!-- LOGOTIPO -->
-          <a href="index.html#inicio" class="navbar-brand p-0 me-2 me-lg-4" aria-label="Página Inicial - Projeto Olaria">
+          <a
+            href="index.html#inicio"
+            class="navbar-brand p-0 me-2 me-lg-4"
+            aria-label="Página Inicial - Projeto Olaria"
+          >
             <img
               src="img/logo.png"
               alt="Projeto de Extensão Olaria - IFSP"
@@ -61,25 +70,38 @@
           </button>
 
           <!-- LINKS DE NAVEGAÇÃO -->
-          <div class="collapse navbar-collapse justify-content-center" id="menuPrincipal">
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="menuPrincipal"
+          >
             <ul class="navbar-nav gap-lg-3 my-2 my-lg-0 text-center">
               <li class="nav-item">
-                <a class="nav-link fw-semibold" href="index.html#inicio">Início</a>
+                <a class="nav-link fw-semibold" href="index.html#inicio"
+                  >Início</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-semibold" href="index.html#sobre">Sobre o Projeto</a>
+                <a class="nav-link fw-semibold" href="index.html#sobre"
+                  >Sobre o Projeto</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-semibold" href="index.html#atividades">Atividades</a>
+                <a class="nav-link fw-semibold" href="index.html#atividades"
+                  >Atividades</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link fw-semibold" href="galeria.html">Galeria</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active fw-semibold" href="noticias.html">Notícias</a>
+                <a class="nav-link active fw-semibold" href="noticias.html"
+                  >Notícias</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-semibold" href="index.html#contato">Contato</a>
+                <a class="nav-link fw-semibold" href="index.html#contato"
+                  >Contato</a
+                >
               </li>
             </ul>
           </div>
@@ -119,18 +141,33 @@
     <!-- ==========================================================================
          CONTEÚDO DINÂMICO DA NOTÍCIA
          ========================================================================== -->
-    <main class="py-5" style="background-color: var(--fundo); min-height: 70vh;">
+    <main class="py-5" style="background-color: var(--fundo); min-height: 70vh">
       <div class="container-xl">
         <!-- Navegação Breadcrumb -->
         <nav aria-label="breadcrumb" class="mb-4">
           <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item">
-              <a href="index.html" class="text-decoration-none" style="color: var(--verde-claro);">Início</a>
+              <a
+                href="index.html"
+                class="text-decoration-none"
+                style="color: var(--verde-claro)"
+                >Início</a
+              >
             </li>
             <li class="breadcrumb-item">
-              <a href="noticias.html" class="text-decoration-none" style="color: var(--verde-claro);">Notícias</a>
+              <a
+                href="noticias.html"
+                class="text-decoration-none"
+                style="color: var(--verde-claro)"
+                >Notícias</a
+              >
             </li>
-            <li class="breadcrumb-item active text-truncate" style="max-width: 300px;" id="breadcrumbTitulo" aria-current="page">
+            <li
+              class="breadcrumb-item active text-truncate"
+              style="max-width: 300px"
+              id="breadcrumbTitulo"
+              aria-current="page"
+            >
               Carregando...
             </li>
           </ol>
@@ -139,54 +176,109 @@
         <div class="row g-4 g-lg-5">
           <!-- Coluna Principal do Artigo -->
           <div class="col-lg-8" id="colunaArtigo">
-            <article class="bg-white p-4 p-md-5 rounded-4 shadow-sm border" style="border-color: rgba(0,0,0,0.05) !important;">
+            <article
+              class="bg-white p-4 p-md-5 rounded-4 shadow-sm border"
+              style="border-color: rgba(0, 0, 0, 0.05) !important"
+            >
               <!-- Categoria e Data -->
-              <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-3">
-                <span class="badge rounded-pill px-3 py-2 fw-bold text-uppercase" id="noticiaCategoria" style="background-color: var(--creme); color: var(--verde-principal); font-size: 0.8rem; letter-spacing: 1px;">
+              <div
+                class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-3"
+              >
+                <span
+                  class="badge rounded-pill px-3 py-2 fw-bold text-uppercase"
+                  id="noticiaCategoria"
+                  style="
+                    background-color: var(--creme);
+                    color: var(--verde-principal);
+                    font-size: 0.8rem;
+                    letter-spacing: 1px;
+                  "
+                >
                   Categoria
                 </span>
-                <span class="text-muted small d-flex align-items-center gap-1" id="noticiaData">
+                <span
+                  class="text-muted small d-flex align-items-center gap-1"
+                  id="noticiaData"
+                >
                   <i class="fa-regular fa-calendar"></i> <span>Data</span>
                 </span>
               </div>
 
               <!-- Título da Notícia -->
-              <h1 class="fw-bolder mb-3" id="noticiaTitulo" style="color: var(--verde-escuro); font-size: clamp(1.8rem, 2.8vw, 2.4rem); line-height: 1.2;">
+              <h1
+                class="fw-bolder mb-3"
+                id="noticiaTitulo"
+                style="
+                  color: var(--verde-escuro);
+                  font-size: clamp(1.8rem, 2.8vw, 2.4rem);
+                  line-height: 1.2;
+                "
+              >
                 Carregando notícia...
               </h1>
 
               <!-- Imagem Principal da Notícia -->
-              <div class="rounded-4 overflow-hidden mb-4" style="max-height: 420px; background-color: var(--creme);">
+              <div
+                class="rounded-4 overflow-hidden mb-4"
+                style="max-height: 420px; background-color: var(--creme)"
+              >
                 <img
                   id="noticiaImg"
                   src=""
                   alt=""
                   class="w-100 h-100 object-fit-cover"
-                  style="min-height: 250px;"
+                  style="min-height: 250px"
                 />
               </div>
 
               <!-- Conteúdo Formatado da Notícia -->
-              <div class="article-body" id="noticiaConteudo" style="font-size: 1.02rem; line-height: 1.75; color: var(--texto-principal);">
+              <div
+                class="article-body"
+                id="noticiaConteudo"
+                style="
+                  font-size: 1.02rem;
+                  line-height: 1.75;
+                  color: var(--texto-principal);
+                "
+              >
                 <!-- Conteúdo inserido dinamicamente via JS -->
               </div>
 
               <!-- Rodapé do Artigo e Compartilhamento -->
-              <hr class="my-4 my-md-5" style="border-color: rgba(0,0,0,0.08);" />
+              <hr
+                class="my-4 my-md-5"
+                style="border-color: rgba(0, 0, 0, 0.08)"
+              />
 
-              <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
-                <a href="index.html#noticias" class="btn btn-outline-success rounded-pill px-4 fw-semibold" style="border-color: var(--verde-escuro); color: var(--verde-escuro);">
+              <div
+                class="d-flex flex-wrap align-items-center justify-content-between gap-3"
+              >
+                <a
+                  href="index.html#noticias"
+                  class="btn btn-outline-success rounded-pill px-4 fw-semibold"
+                  style="
+                    border-color: var(--verde-escuro);
+                    color: var(--verde-escuro);
+                  "
+                >
                   <i class="fa-solid fa-arrow-left me-2"></i> Voltar ao Início
                 </a>
 
                 <div class="d-flex align-items-center gap-2">
-                  <span class="small fw-bold text-muted me-1">Compartilhar:</span>
+                  <span class="small fw-bold text-muted me-1"
+                    >Compartilhar:</span
+                  >
                   <a
                     href="#"
                     id="shareWhatsApp"
                     target="_blank"
                     class="btn btn-sm rounded-circle d-inline-flex align-items-center justify-content-center"
-                    style="width: 36px; height: 36px; background-color: #25d366; color: white;"
+                    style="
+                      width: 36px;
+                      height: 36px;
+                      background-color: #25d366;
+                      color: white;
+                    "
                     aria-label="Compartilhar no WhatsApp"
                   >
                     <i class="fa-brands fa-whatsapp"></i>
@@ -195,7 +287,12 @@
                     type="button"
                     id="btnCopiarLink"
                     class="btn btn-sm rounded-circle d-inline-flex align-items-center justify-content-center"
-                    style="width: 36px; height: 36px; background-color: var(--verde-escuro); color: white;"
+                    style="
+                      width: 36px;
+                      height: 36px;
+                      background-color: var(--verde-escuro);
+                      color: white;
+                    "
                     aria-label="Copiar link"
                     title="Copiar Link"
                   >
@@ -208,8 +305,14 @@
 
           <!-- Coluna Lateral: Outras Notícias Recentes -->
           <div class="col-lg-4">
-            <aside class="p-4 rounded-4 bg-white shadow-sm border" style="border-color: rgba(0,0,0,0.05) !important;">
-              <h3 class="fw-bold mb-3 pb-2 border-bottom" style="color: var(--verde-escuro); font-size: 1.15rem;">
+            <aside
+              class="p-4 rounded-4 bg-white shadow-sm border"
+              style="border-color: rgba(0, 0, 0, 0.05) !important"
+            >
+              <h3
+                class="fw-bold mb-3 pb-2 border-bottom"
+                style="color: var(--verde-escuro); font-size: 1.15rem"
+              >
                 Outras Notícias
               </h3>
 
@@ -218,8 +321,13 @@
               </div>
 
               <div class="mt-4 pt-2">
-                <a href="noticias.html" class="btn w-100 rounded-pill fw-bold text-white" style="background-color: var(--verde-escuro);">
-                  Ver Todas as Notícias <i class="fa-solid fa-arrow-right ms-1"></i>
+                <a
+                  href="noticias.html"
+                  class="btn w-100 rounded-pill fw-bold text-white"
+                  style="background-color: var(--verde-escuro)"
+                >
+                  Ver Todas as Notícias
+                  <i class="fa-solid fa-arrow-right ms-1"></i>
                 </a>
               </div>
             </aside>
@@ -257,23 +365,33 @@
                 />
               </div>
 
-              <h4 class="footer-brand-title fw-bold mb-2">Projeto de Extensão Olaria</h4>
+              <h4 class="footer-brand-title fw-bold mb-2">
+                Projeto de Extensão Olaria
+              </h4>
               <p class="footer-text mb-0">
-                Conectando o IFSP Caraguatatuba<br />
-                à comunidade para gerar conhecimento,<br />
-                desenvolvimento e transformação social.<br />
-                Juntos, construímos uma Olaria<br />
-                cada vez melhor.
+                Conectando Engenharia Civil e<br />
+                comunidade para compreender áreas de riscos<br />
+                e contribuir com ações de prevenção no bairro Olaria.
               </p>
+              <div class="footer-apoio mt-4 d-flex align-items-center gap-2">
+                <span class="footer-apoio-titulo">APOIO</span>
+                <div class="footer-apoio-logo mt-2">
+                  <img src="img/ifsp.png" alt="IFSP" />
+                </div>
+                <div class="footer-apoio-logo mt-2">
+                  <img src="img/parceiro.png" alt="Ideal" />
+                </div>
+              </div>
             </div>
           </div>
 
           <div class="col-lg-2 col-md-6 col-6">
-            <h5 class="footer-col-title fw-bold text-uppercase mb-3">NAVEGAÇÃO</h5>
+            <h5 class="footer-col-title fw-bold text-uppercase mb-3">
+              NAVEGAÇÃO
+            </h5>
             <ul class="list-unstyled footer-links mb-0">
-              <li><a href="index.html#inicio">Início</a></li>
+              <li><a href="index.html">Início</a></li>
               <li><a href="index.html#sobre">Sobre o Projeto</a></li>
-              <li><a href="index.html#atividades">Atividades</a></li>
               <li><a href="galeria.html">Galeria</a></li>
               <li><a href="noticias.html">Notícias</a></li>
               <li><a href="index.html#contato">Contato</a></li>
@@ -281,7 +399,9 @@
           </div>
 
           <div class="col-lg-3 col-md-6 col-6">
-            <h5 class="footer-col-title fw-bold text-uppercase mb-3">CONTATO</h5>
+            <h5 class="footer-col-title fw-bold text-uppercase mb-3">
+              CONTATO
+            </h5>
             <ul class="list-unstyled footer-contact mb-0">
               <li class="mb-2 d-flex align-items-center">
                 <i class="fa-solid fa-phone me-2" aria-hidden="true"></i>
@@ -289,10 +409,13 @@
               </li>
               <li class="mb-3 d-flex align-items-center">
                 <i class="fa-solid fa-envelope me-2" aria-hidden="true"></i>
-                <span>extensao.car@ifsp.edu.br</span>
+                <span>projeto.olariaifsp@gmail.com</span>
               </li>
               <li class="d-flex align-items-start">
-                <i class="fa-solid fa-location-dot me-2 mt-1" aria-hidden="true"></i>
+                <i
+                  class="fa-solid fa-location-dot me-2 mt-1"
+                  aria-hidden="true"
+                ></i>
                 <span>
                   Av. Bahia, 1739 - Indaiá<br />
                   Caraguatatuba - SP<br />
@@ -303,10 +426,12 @@
           </div>
 
           <div class="col-lg-3 col-md-6">
-            <h5 class="footer-col-title fw-bold text-uppercase mb-3">SIGA-NOS</h5>
+            <h5 class="footer-col-title fw-bold text-uppercase mb-3">
+              SIGA-NOS
+            </h5>
             <div class="d-flex gap-2">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/projeto.olaria_ifsp?stkn=ejh3YmtyMnZ1MmV5"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="footer-social-btn"
@@ -315,16 +440,16 @@
                 <i class="fa-brands fa-instagram"></i>
               </a>
               <a
-                href="https://facebook.com"
+                href="https://wa.me/5512999999999"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="footer-social-btn"
-                aria-label="Facebook"
+                aria-label="WhatsApp"
               >
-                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-whatsapp"></i>
               </a>
               <a
-                href="mailto:extensao.car@ifsp.edu.br"
+                href="mailto:projeto.olariaifsp@gmail.com"
                 class="footer-social-btn"
                 aria-label="E-mail"
               >
@@ -338,7 +463,11 @@
       <div class="footer-bottom py-3 text-center position-relative z-2">
         <div class="container-xl">
           <p class="mb-0 copyright-text">
-            © 2025 IFSP Campus Caraguatatuba – Projeto de Extensão Olaria. Todos os direitos reservados.
+            © 2026 Instituto Federal de São Paulo - Campus Caraguatatuba. Todos
+            os direitos reservados.
+          </p>
+          <p class="mb-0 copyright-text" style="padding: 5px 0 0 0">
+            Desenvolvido por Giovanna Nicolau
           </p>
         </div>
       </div>
@@ -372,30 +501,38 @@
               </a>
             </div>
           `;
-          document.getElementById("breadcrumbTitulo").textContent = "Não encontrada";
+          document.getElementById("breadcrumbTitulo").textContent =
+            "Não encontrada";
           return;
         }
 
         // Atualização do título da página
         document.title = `${noticiaAtual.titulo} – Projeto Olaria`;
-        document.getElementById("breadcrumbTitulo").textContent = noticiaAtual.titulo;
+        document.getElementById("breadcrumbTitulo").textContent =
+          noticiaAtual.titulo;
 
         // População dos elementos dinâmicos
-        document.getElementById("noticiaCategoria").textContent = noticiaAtual.categoria;
-        document.getElementById("noticiaData").innerHTML = `<i class="fa-regular fa-calendar me-1"></i> ${noticiaAtual.data}`;
-        document.getElementById("noticiaTitulo").textContent = noticiaAtual.titulo;
-        
+        document.getElementById("noticiaCategoria").textContent =
+          noticiaAtual.categoria;
+        document.getElementById("noticiaData").innerHTML =
+          `<i class="fa-regular fa-calendar me-1"></i> ${noticiaAtual.data}`;
+        document.getElementById("noticiaTitulo").textContent =
+          noticiaAtual.titulo;
+
         const imgEl = document.getElementById("noticiaImg");
         imgEl.src = noticiaAtual.img;
         imgEl.alt = noticiaAtual.titulo;
 
-        document.getElementById("noticiaConteudo").innerHTML = noticiaAtual.conteudo;
+        document.getElementById("noticiaConteudo").innerHTML =
+          noticiaAtual.conteudo;
 
         // Link de Compartilhamento WhatsApp
         const shareWhatsApp = document.getElementById("shareWhatsApp");
         if (shareWhatsApp) {
           const shareUrl = encodeURIComponent(window.location.href);
-          const shareText = encodeURIComponent(`${noticiaAtual.titulo} - Projeto Olaria IFSP`);
+          const shareText = encodeURIComponent(
+            `${noticiaAtual.titulo} - Projeto Olaria IFSP`,
+          );
           shareWhatsApp.href = `https://api.whatsapp.com/send?text=${shareText}%20${shareUrl}`;
         }
 
@@ -415,13 +552,19 @@
         }
 
         // População das Outras Notícias na Barra Lateral
-        const listaOutrasNoticias = document.getElementById("listaOutrasNoticias");
+        const listaOutrasNoticias = document.getElementById(
+          "listaOutrasNoticias",
+        );
         if (listaOutrasNoticias) {
-          const outras = dados.filter((item) => item.id !== noticiaId).slice(-4).reverse();
+          const outras = dados
+            .filter((item) => item.id !== noticiaId)
+            .slice(-4)
+            .reverse();
           outras.forEach((item) => {
             const itemCard = document.createElement("a");
             itemCard.href = `noticia.html?id=${item.id}`;
-            itemCard.className = "d-flex gap-3 text-decoration-none p-2 rounded-3 text-reset sidebar-news-item";
+            itemCard.className =
+              "d-flex gap-3 text-decoration-none p-2 rounded-3 text-reset sidebar-news-item";
             itemCard.innerHTML = `
               <img src="${item.img}" alt="${item.titulo}" class="rounded-3 object-fit-cover flex-shrink-0" width="75" height="70" />
               <div class="d-flex flex-column justify-content-center">
