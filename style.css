@@ -699,6 +699,11 @@ body {
   object-fit: contain;
 }
 
+.footer-contact span {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
 /* =========================================
    FORMATAÇÃO DAS NOTÍCIAS
 ========================================= */
