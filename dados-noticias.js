@@ -9,10 +9,10 @@ const noticiasDados = [
     titulo:
       "Primeiros passos no bairro Olaria",
     categoria: "EDUCAÇÃO",
-    data: "20 de agosto de 2026",
+    data: "17 de agosto de 2026",
     descricao:
       "Nosso trabalho começou em sala de aula, com estudo do bairro, planejamento das visitas e preparação dos materiais do projeto.",
-    img: "img/noticia1.jpg",
+    img: "img/noticia1.png",
     conteudo: `
       <p class="subtitulo">
         <strong><i>Nosso projeto começou em sala de aula, antes mesmo da primeira visita ao bairro Olaria. Nos primeiros encontros, começamos a estudar a região, entender melhor os principais problemas existentes no bairro e organizar como seriam realizadas as próximas etapas do trabalho.</i></strong>
@@ -51,10 +51,10 @@ const noticiasDados = [
     titulo:
       "Ideal apoia o Projeto Olaria",
     categoria: "PARCERIA",
-    data: "03 de setembro de 2026",
+    data: "24 de agosto de 2026",
     descricao:
       "A empresa Ideal apoiou nosso projeto com o patrocínio das camisetas utilizadas pelos alunos durante as atividades de campo.",
-    img: "img/noticia4.jpg",
+    img: "img/noticia2.jpeg",
     conteudo: `
       <p class="subtitulo"><strong><i>Nosso projeto também conta com a colaboração de parceiros. A empresa Ideal apoiou a iniciativa por meio do patrocínio das camisetas que serão utilizadas pelos alunos durante as atividades realizadas no bairro Olaria.</i></strong></p>
       
@@ -77,10 +77,10 @@ const noticiasDados = [
     titulo:
       "Primeira visita técnica com a Defesa Civil",
     categoria: "PREVENÇÃO",
-    data: "27 de agosto de 2026",
+    data: "31 de agosto de 2026",
     descricao:
       "Ao lado da Defesa Civil, percorremos pontos do bairro para conhecer de perto áreas que precisam de maior atenção.",
-    img: "img/noticia2.jpg",
+    img: "img/noticia3.jpeg",
     conteudo: `
       <p class="subtitulo"><strong><i>Depois da preparação em sala de aula, chegou o momento de conhecer de perto alguns dos locais que estávamos estudando. Nossa primeira visita técnica pelo bairro Olaria foi realizada com o acompanhamento da Defesa Civil.</i></strong></p>
       
