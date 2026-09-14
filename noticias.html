@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todas as Notícias – Projeto de Extensão Olaria</title>
+
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap 5.3.8 CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Font Awesome 6.7.2 CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- Estilos Customizados -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- CABEÇALHO / NAVEGAÇÃO -->
+    <header class="site-header sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-light py-2 py-lg-3" aria-label="Navegação Principal">
+        <div class="container-xl d-flex align-items-center justify-content-between">
+          <a href="index.html#inicio" class="navbar-brand p-0 me-2 me-lg-4" aria-label="Página Inicial">
+            <img
+              src="img/logo.png"
+              alt="Projeto de Extensão Olaria - IFSP"
+              class="navbar-logo"
+              width="80"
+              height="80"
+            />
+          </a>
+
+          <button
+            class="navbar-toggler border-0 shadow-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuPrincipal"
+            aria-controls="menuPrincipal"
+            aria-expanded="false"
+            aria-label="Abrir menu de navegação"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-center" id="menuPrincipal">
+            <ul class="navbar-nav gap-lg-3 my-2 my-lg-0 text-center">
+              <li class="nav-item"><a class="nav-link fw-semibold" href="index.html#inicio">Início</a></li>
+              <li class="nav-item"><a class="nav-link fw-semibold" href="index.html#sobre">Sobre o Projeto</a></li>
+              <li class="nav-item"><a class="nav-link fw-semibold" href="index.html#atividades">Atividades</a></li>
+              <li class="nav-item"><a class="nav-link fw-semibold" href="galeria.html">Galeria</a></li>
+              <li class="nav-item"><a class="nav-link active fw-semibold" href="noticias.html">Notícias</a></li>
+              <li class="nav-item"><a class="nav-link fw-semibold" href="index.html#contato">Contato</a></li>
+            </ul>
+          </div>
+
+          <div class="d-none d-lg-flex align-items-center gap-2">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="header-social-btn" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="header-social-btn" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="mailto:extensao.car@ifsp.edu.br" class="header-social-btn" aria-label="E-mail">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- LISTAGEM DE NOTÍCIAS -->
+    <main class="py-5" style="background-color: var(--fundo); min-height: 75vh;">
+      <div class="container-xl">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="mb-4">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item">
+              <a href="index.html" class="text-decoration-none" style="color: var(--verde-claro);">Início</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Todas as Notícias</li>
+          </ol>
+        </nav>
+
+        <!-- Título da Página -->
+        <div class="text-center mb-4 mb-lg-5">
+          <span class="section-tag">COMUNICAÇÃO E TRANSPARÊNCIA</span>
+          <div class="section-tag-line mx-auto"></div>
+          <h1 class="fw-bolder mb-2" style="color: var(--verde-escuro); font-size: clamp(2rem, 3.2vw, 2.7rem);">
+            Notícias e Acontecimentos
+          </h1>
+          <p class="section-subtitle mb-0">
+            Acompanhe todas as atualizações, oficinas e conquistas do Projeto de Extensão Olaria
+          </p>
+        </div>
+
+        <!-- Grade Dinâmica com Todas as Notícias -->
+        <div class="row g-4" id="gradeTodasNoticias">
+          <!-- Renderizado dinamicamente via JS com forEach -->
+        </div>
+      </div>
+    </main>
+
+    <!-- RODAPÉ -->
+    <svg
+      class="footer-onda"
+      viewBox="0 0 1440 50"
+      preserveAspectRatio="none"
+      aria-hidden="true"
+    >
+      <path
+        d="M 0,25 C 180,5 360,35 720,28 C 1080,22 1260,18 1440,24 L 1440,50 L 0,50 Z"
+      />
+    </svg>
+
+    <footer id="contato" class="site-footer text-white position-relative">
+      <div class="container-xl py-5 position-relative z-2">
+        <div class="row g-4 g-lg-5 align-items-start">
+          <div class="col-lg-4 col-md-6">
+            <div class="d-flex flex-column">
+              <div class="mb-3">
+                <img
+                  src="img/logo.png"
+                  alt="Logotipo do Projeto Olaria"
+                  class="footer-logo-img"
+                  width="82"
+                  height="82"
+                />
+              </div>
+
+              <h4 class="footer-brand-title fw-bold mb-2">Projeto de Extensão Olaria</h4>
+              <p class="footer-text mb-0">
+                Conectando o IFSP Caraguatatuba<br />
+                à comunidade para gerar conhecimento,<br />
+                desenvolvimento e transformação social.<br />
+                Juntos, construímos uma Olaria<br />
+                cada vez melhor.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-6">
+            <h5 class="footer-col-title fw-bold text-uppercase mb-3">NAVEGAÇÃO</h5>
+            <ul class="list-unstyled footer-links mb-0">
+              <li><a href="index.html#inicio">Início</a></li>
+              <li><a href="index.html#sobre">Sobre o Projeto</a></li>
+              <li><a href="index.html#atividades">Atividades</a></li>
+              <li><a href="galeria.html">Galeria</a></li>
+              <li><a href="noticias.html">Notícias</a></li>
+              <li><a href="index.html#contato">Contato</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-6">
+            <h5 class="footer-col-title fw-bold text-uppercase mb-3">CONTATO</h5>
+            <ul class="list-unstyled footer-contact mb-0">
+              <li class="mb-2 d-flex align-items-center">
+                <i class="fa-solid fa-phone me-2" aria-hidden="true"></i>
+                <span>(12) 3885-2130</span>
+              </li>
+              <li class="mb-3 d-flex align-items-center">
+                <i class="fa-solid fa-envelope me-2" aria-hidden="true"></i>
+                <span>extensao.car@ifsp.edu.br</span>
+              </li>
+              <li class="d-flex align-items-start">
+                <i class="fa-solid fa-location-dot me-2 mt-1" aria-hidden="true"></i>
+                <span>
+                  Av. Bahia, 1739 - Indaiá<br />
+                  Caraguatatuba - SP<br />
+                  CEP: 11665-071
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-col-title fw-bold text-uppercase mb-3">SIGA-NOS</h5>
+            <div class="d-flex gap-2">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="mailto:extensao.car@ifsp.edu.br" class="footer-social-btn" aria-label="E-mail">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom py-3 text-center position-relative z-2">
+        <div class="container-xl">
+          <p class="mb-0 copyright-text">
+            © 2025 IFSP Campus Caraguatatuba – Projeto de Extensão Olaria. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Base de dados -->
+    <script src="dados-noticias.js"></script>
+
+    <!-- Script de Renderização de Todas as Notícias com forEach -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const gradeTodasNoticias = document.getElementById("gradeTodasNoticias");
+        const dados = window.noticiasDados || [];
+
+        // Exibe todas as notícias em ordem decrescente (mais recentes primeiro)
+        const noticiasOrdenadas = [...dados].reverse();
+
+        noticiasOrdenadas.forEach((noticia) => {
+          const col = document.createElement("div");
+          col.className = "col-md-6 col-lg-4";
+          col.innerHTML = `
+            <article class="news-card h-100 d-flex flex-column">
+              <div class="news-img-wrap">
+                <a href="noticia.html?id=${noticia.id}" aria-label="Ler notícia completa: ${noticia.titulo}">
+                  <img
+                    src="${noticia.img}"
+                    alt="${noticia.titulo}"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+              <div class="p-4 d-flex flex-column flex-grow-1">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="news-category">${noticia.categoria}</span>
+                  <span class="news-date">${noticia.data}</span>
+                </div>
+                <h3 class="news-title">
+                  <a href="noticia.html?id=${noticia.id}" class="text-decoration-none" style="color: inherit;">
+                    ${noticia.titulo}
+                  </a>
+                </h3>
+                <p class="news-desc">
+                  ${noticia.descricao}
+                </p>
+                <a href="noticia.html?id=${noticia.id}" class="news-link mt-auto fw-bold text-decoration-none">
+                  Leia mais <i class="fa-solid fa-arrow-right ms-1"></i>
+                </a>
+              </div>
+            </article>
+          `;
+          gradeTodasNoticias.appendChild(col);
+        });
+      });
+    </script>
+  </body>
+</html>
