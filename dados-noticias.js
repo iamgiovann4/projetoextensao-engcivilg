@@ -69,6 +69,8 @@ const noticiasDados = [
       <p>O objetivo do projeto é aproximar o conhecimento desenvolvido no curso de Engenharia Civil da realidade do bairro Olaria, buscando compreender melhor as áreas que precisam de atenção e contribuir para futuras ações de prevenção.</p>
       
       <p>Agradecemos à Ideal pelo apoio ao projeto e por contribuir com uma iniciativa desenvolvida por estudantes e voltada para a comunidade.</p>
+
+      <img src=img/parceiro.png style="width: 100px "></img>
     `,
   },
 

@@ -672,6 +672,33 @@ body {
   font-size: 0.78rem;
 }
 
+.footer-bottom p:last-child {
+  font-size: 0.72rem;
+  opacity: 0.75;
+}
+
+.footer-apoio-titulo {
+  display: block;
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+}
+
+.footer-apoio-logo {
+  width: fit-content;
+  padding: 8px 8px;
+  background-color: #ffffff;
+  border-radius: 50px;
+}
+
+.footer-apoio-logo img {
+  display: block;
+  max-width: 90px;
+  max-height: 38px;
+  object-fit: contain;
+}
+
 /* =========================================
    FORMATAÇÃO DAS NOTÍCIAS
 ========================================= */
