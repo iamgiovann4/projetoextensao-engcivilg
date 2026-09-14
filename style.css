@@ -672,6 +672,95 @@ body {
   font-size: 0.78rem;
 }
 
+/* =========================================
+   FORMATAÇÃO DAS NOTÍCIAS
+========================================= */
+.article-body p {
+  text-align: justify;
+}
+
+/* Corpo do texto */
+.noticia-conteudo {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #333333;
+}
+
+/* Parágrafos */
+.noticia-conteudo p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+
+  margin-top: 0;
+  margin-bottom: 18px;
+
+  /* Sem recuo no início do parágrafo */
+  text-indent: 0;
+}
+
+/* Primeiro parágrafo da notícia */
+.noticia-conteudo .subtitulo {
+  font-size: 16px;
+  line-height: 1.75;
+  font-weight: 400;
+  text-align: justify;
+  margin-bottom: 22px;
+}
+
+/* Palavras destacadas */
+.noticia-conteudo strong {
+  font-weight: 600;
+  color: inherit;
+}
+
+/* Citação */
+.noticia-conteudo blockquote {
+  margin: 28px 0;
+  padding: 18px 22px;
+
+  background-color: var(--creme);
+  border-left: 4px solid var(--verde-escuro);
+  border-radius: 8px;
+}
+
+/* Texto da citação */
+.noticia-conteudo blockquote p {
+  margin: 0;
+
+  text-align: left;
+  text-indent: 0;
+
+  line-height: 1.65;
+  font-weight: 600;
+
+  color: var(--verde-escuro);
+}
+
+/* =========================================
+   RESPONSIVO
+========================================= */
+
+@media (max-width: 768px) {
+  .noticia-conteudo {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .noticia-conteudo .lead {
+    font-size: 16px;
+  }
+
+  .noticia-conteudo p {
+    margin-bottom: 16px;
+  }
+
+  .noticia-conteudo blockquote {
+    margin: 22px 0;
+    padding: 16px 18px;
+  }
+}
+
 /* ==========================================================================
    7. RESPONSIVIDADE (BOOTSTRAP MEDIA QUERIES)
    ========================================================================== */
