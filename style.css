@@ -20,22 +20,98 @@
   --texto-secundario: #6f746e;
 }
 
-header {
-  background-color: var(--off-white);
+html {
+  scroll-behavior: smooth;
 }
 
+body {
+  font-family:
+    "Plus Jakarta Sans",
+    system-ui,
+    -apple-system,
+    sans-serif;
+  background-color: var(--fundo);
+  color: var(--texto-principal);
+  overflow-x: hidden;
+}
+
+/* ==========================================================================
+   1. NAVBAR / HEADER
+   ========================================================================== */
+.site-header {
+  background-color: var(--off-white);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  z-index: 1030;
+}
+
+.navbar-logo {
+  height: clamp(65px, 6vw, 82px);
+  width: auto;
+  object-fit: contain;
+}
+
+.site-header .nav-link {
+  color: var(--texto-principal);
+  font-size: 0.94rem;
+  position: relative;
+  padding: 0.5rem 0.85rem !important;
+  transition: color 0.2s ease;
+}
+
+.site-header .nav-link:hover,
+.site-header .nav-link:focus,
+.site-header .nav-link.active {
+  color: var(--verde-escuro);
+}
+
+/* Linha verde do item ativo */
+.site-header .nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0.85rem;
+  right: 0.85rem;
+  height: 2.5px;
+  background-color: var(--verde-escuro);
+  border-radius: 2px;
+}
+
+/* Botões circulares das redes sociais no header */
+.header-social-btn {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: var(--verde-escuro);
+  color: var(--branco) !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.88rem;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.header-social-btn:hover {
+  background-color: var(--verde-principal);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   2. BANNER / CARROSSEL PRINCIPAL
+   ========================================================================== */
 .banner {
   position: relative;
   overflow: hidden;
-  background: var(--fundo);
+  background-color: var(--fundo);
 }
 
 .banner .carousel-item {
   position: relative;
-  height: clamp(440px, 44vw, 650px);
+  height: clamp(480px, 48vw, 680px);
 }
 
-/* Fotografia ocupando o slide inteiro */
 .banner-foto {
   position: absolute;
   inset: 0;
@@ -45,92 +121,103 @@ header {
   object-position: center right;
 }
 
-/* Transição entre o fundo claro e a fotografia */
+/* Gradiente de transição entre o fundo claro e a imagem */
 .banner .carousel-item::after {
   content: "";
   position: absolute;
   inset: 0;
   z-index: 1;
-
   background: linear-gradient(
     to right,
     var(--fundo) 0%,
-    var(--fundo) 27%,
-    rgba(248, 247, 243, 0.95) 34%,
-    rgba(248, 247, 243, 0.55) 44%,
-    rgba(248, 247, 243, 0) 60%
+    var(--fundo) 28%,
+    rgba(248, 247, 243, 0.94) 36%,
+    rgba(248, 247, 243, 0.55) 48%,
+    rgba(248, 247, 243, 0) 65%
   );
 }
 
 .banner-conteudo {
   position: relative;
   z-index: 2;
-  width: 46%;
-  padding: clamp(48px, 6vw, 90px) 0 0 6%;
+  max-width: 480px;
+  padding-left: 0.5rem;
 }
 
 .banner-etiqueta {
   color: var(--verde-claro);
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.8px;
   text-transform: uppercase;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .banner-titulo {
   color: var(--verde-escuro);
-  font-size: clamp(48px, 7.5vw, 100px);
-  line-height: 1;
+  font-size: clamp(48px, 7vw, 92px);
+  line-height: 0.95;
   font-weight: 800;
   letter-spacing: -2px;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .banner-subtitulo {
   color: var(--verde-claro);
-  font-size: clamp(20px, 2.5vw, 32px);
+  font-size: clamp(20px, 2.4vw, 30px);
   font-weight: 700;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 .banner-descricao {
-  max-width: 340px;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #454545;
+  max-width: 360px;
+  font-size: 15.5px;
+  line-height: 1.55;
+  color: var(--texto-principal);
+  opacity: 0.9;
+  margin-bottom: 0;
 }
 
 .banner-detalhe {
-  width: 48px;
+  width: 45px;
   height: 3px;
-  margin-top: 24px;
-  background: var(--verde-claro);
+  margin-top: 22px;
+  background: var(--verde-escuro);
+  border-radius: 2px;
 }
 
-/* Onda compartilhada pelos slides */
+/* Onda orgânica inferior verde escura */
 .banner-onda {
   position: absolute;
   bottom: -1px;
   left: 0;
   width: 100%;
-  height: 29%;
+  height: 28%;
+  min-height: 90px;
   z-index: 3;
   pointer-events: none;
   fill: var(--verde-escuro);
 }
 
-/* Setas posicionadas na base */
+/* Setas de navegação do carrossel na base */
 .banner .carousel-control-prev,
 .banner .carousel-control-next {
   top: auto;
-  bottom: 20px;
-  width: 38px;
-  height: 38px;
+  bottom: 22px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.35);
+  opacity: 0.9;
+  z-index: 5;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.banner .carousel-control-prev:hover,
+.banner .carousel-control-next:hover {
+  background: rgba(0, 0, 0, 0.6);
   opacity: 1;
-  z-index: 4;
 }
 
 .banner .carousel-control-prev {
@@ -141,77 +228,524 @@ header {
   right: 28px;
 }
 
-.banner .carousel-control-prev-icon,
-.banner .carousel-control-next-icon {
-  width: 18px;
-  height: 18px;
+.banner .carousel-control-prev i,
+.banner .carousel-control-next i {
+  font-size: 14px;
+  color: var(--branco);
 }
 
+/* Indicadores de bolinha na base da onda */
 .banner .carousel-indicators {
   bottom: 26px;
   margin-bottom: 0;
-  z-index: 4;
+  z-index: 5;
+  gap: 6px;
 }
 
 .banner .carousel-indicators button {
   box-sizing: border-box;
-  width: 13px;
-  height: 13px;
-  margin: 0 5px;
-  border: 2px solid white;
+  width: 11px;
+  height: 11px;
+  margin: 0;
+  border: 1.5px solid var(--branco);
   border-radius: 50%;
   background: transparent;
-  opacity: 0.6;
+  opacity: 0.75;
+  transition: all 0.25s ease;
 }
 
 .banner .carousel-indicators button.active {
-  background: white;
+  background: var(--branco);
   opacity: 1;
 }
 
-.banner button:focus-visible {
-  outline: 3px solid #e7c96b;
-  outline-offset: 4px;
+/* ==========================================================================
+   3. SEÇÃO: SOBRE O PROJETO
+   ========================================================================== */
+.section-sobre {
+  background-color: var(--fundo);
 }
 
-/* Adaptação para celular */
+.section-tag {
+  color: var(--verde-claro);
+  font-size: 13.5px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  display: block;
+}
+
+.section-tag-line {
+  width: 32px;
+  height: 2.5px;
+  background-color: var(--verde-claro);
+  margin-top: 6px;
+  margin-bottom: 22px;
+  border-radius: 2px;
+}
+
+.sobre-title {
+  color: var(--verde-escuro);
+  font-size: clamp(2rem, 3.2vw, 2.65rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+
+.sobre-paragrafo {
+  color: var(--texto-principal);
+  font-size: 0.94rem;
+  line-height: 1.65;
+  opacity: 0.88;
+}
+
+/* Card bege com a grade de 6 destaques */
+.sobre-features-card {
+  background-color: var(--creme);
+  border-radius: 22px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.sobre-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+}
+
+.sobre-grid-item {
+  padding: 1.6rem 1.1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Divisórias verticais entre colunas */
+.sobre-grid-item:not(:nth-child(3n))::after {
+  content: "";
+  position: absolute;
+  top: 15%;
+  right: 0;
+  bottom: 15%;
+  width: 1px;
+  background-color: #dfdacd;
+}
+
+/* Divisória horizontal entre linha 1 e linha 2 */
+.sobre-grid-item:nth-child(-n + 3)::before {
+  content: "";
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  bottom: 0;
+  height: 1px;
+  background-color: #dfdacd;
+}
+
+.sobre-icon {
+  font-size: 1.85rem;
+  color: var(--verde-escuro);
+  margin-bottom: 0.75rem;
+}
+
+.sobre-item-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--verde-escuro);
+  margin-bottom: 0.4rem;
+}
+
+.sobre-item-desc {
+  font-size: 0.78rem;
+  line-height: 1.4;
+  color: var(--texto-secundario);
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
+   4. SEÇÃO: GALERIA
+   ========================================================================== */
+.section-galeria {
+  background-color: var(--fundo);
+}
+
+.section-heading {
+  color: var(--verde-escuro);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+}
+
+.heading-line {
+  width: 32px;
+  height: 2.5px;
+  background-color: var(--verde-claro);
+  margin-bottom: 12px;
+  border-radius: 2px;
+}
+
+.section-subtitle {
+  color: var(--texto-secundario);
+  font-size: 0.92rem;
+}
+
+.gallery-card {
+  border-radius: 18px;
+  overflow: hidden;
+  height: clamp(200px, 20vw, 250px);
+  background-color: #e8e5dc;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.04);
+}
+
+/* Botão de avançar na lateral direita da galeria */
+.gallery-nav-btn {
+  position: absolute;
+  right: -16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: var(--verde-escuro);
+  color: var(--branco);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(18, 75, 54, 0.3);
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.gallery-nav-btn:hover {
+  background-color: var(--verde-principal);
+  transform: translateY(-50%) scale(1.05);
+}
+
+/* Indicadores da galeria (cápsulas) */
+.gallery-indicators-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 1.5rem;
+}
+
+.gallery-dot {
+  display: inline-block;
+  height: 7px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.gallery-dot.active {
+  width: 22px;
+  background-color: var(--verde-escuro);
+}
+
+.gallery-dot:not(.active) {
+  width: 10px;
+  background-color: #d8d6cc;
+}
+
+/* ==========================================================================
+   5. SEÇÃO: NOTÍCIAS E ACONTECIMENTOS
+   ========================================================================== */
+.section-noticias {
+  background-color: var(--fundo);
+}
+
+.news-card {
+  background-color: #fbfaf6;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.035);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+}
+
+.news-img-wrap {
+  height: 165px;
+  overflow: hidden;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+.news-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.news-card:hover .news-img-wrap img {
+  transform: scale(1.04);
+}
+
+.news-category {
+  color: var(--verde-claro);
+  font-size: 0.72rem;
+  letter-spacing: 0.8px;
+  font-weight: 700;
+}
+
+.news-date {
+  color: var(--texto-secundario);
+  font-size: 0.72rem;
+}
+
+.news-title {
+  color: var(--verde-escuro);
+  font-size: 1.02rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-top: 6px;
+  margin-bottom: 8px;
+}
+
+.news-desc {
+  color: var(--texto-secundario);
+  font-size: 0.82rem;
+  line-height: 1.45;
+  margin-bottom: 1.25rem;
+}
+
+.news-link {
+  color: var(--verde-escuro);
+  font-size: 0.84rem;
+  display: inline-flex;
+  align-items: center;
+  transition:
+    color 0.2s ease,
+    gap 0.2s ease;
+}
+
+.news-link i {
+  transition: transform 0.2s ease;
+}
+
+.news-link:hover {
+  color: var(--verde-principal);
+}
+
+.news-link:hover i {
+  transform: translateX(4px);
+}
+
+.view-all-news {
+  color: var(--verde-escuro);
+  font-size: 0.88rem;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.view-all-news i {
+  transition: transform 0.2s ease;
+}
+
+.view-all-news:hover {
+  color: var(--verde-principal);
+}
+
+.view-all-news:hover i {
+  transform: translateX(4px);
+}
+
+/* ==========================================================================
+   6. RODAPÉ (FOOTER)
+   ========================================================================== */
+.footer-onda {
+  display: block;
+  width: 100%;
+  height: 100px;
+  fill: var(--verde-escuro);
+  margin-bottom: -1px;
+}
+
+.site-footer {
+  background-color: var(--verde-escuro);
+  background-image: url("img/footer_art.png");
+  background-repeat: no-repeat;
+  background-position: right bottom 2.5rem;
+  background-size: auto 130px;
+}
+
+.footer-logo-img {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  background-color: var(--branco);
+  padding: 3px;
+  object-fit: contain;
+}
+
+.footer-brand-title {
+  font-size: 0.96rem;
+  color: var(--branco);
+}
+
+.footer-text {
+  color: #c9d5ce;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.footer-col-title {
+  color: var(--branco);
+  font-size: 0.82rem;
+  letter-spacing: 1.4px;
+}
+
+.footer-links a {
+  color: #c9d5ce;
+  text-decoration: none;
+  font-size: 0.84rem;
+  line-height: 1.95;
+  display: block;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--branco);
+}
+
+.footer-contact li {
+  color: #c9d5ce;
+  font-size: 0.84rem;
+  line-height: 1.4;
+}
+
+.footer-contact i {
+  color: #a2b7ab;
+  font-size: 0.9rem;
+}
+
+.footer-social-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1.2px solid rgba(255, 255, 255, 0.65);
+  color: var(--branco) !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.footer-social-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: var(--branco);
+  transform: translateY(-2px);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.copyright-text {
+  color: #b7c7be;
+  font-size: 0.78rem;
+}
+
+/* ==========================================================================
+   7. RESPONSIVIDADE (BOOTSTRAP MEDIA QUERIES)
+   ========================================================================== */
+@media (max-width: 991.98px) {
+  .site-header .nav-link.active::after {
+    display: none;
+  }
+  .site-header .nav-link.active {
+    font-weight: 700;
+  }
+  .site-footer {
+    background-size: auto 90px;
+  }
+}
+
 @media (max-width: 767.98px) {
   .banner .carousel-item {
-    height: 650px;
+    height: 600px;
   }
 
   .banner-foto {
-    object-position: 65% center;
+    object-position: 70% center;
   }
 
   .banner .carousel-item::after {
     background: linear-gradient(
       to bottom,
       var(--fundo) 0%,
-      rgba(248, 247, 243, 0.98) 35%,
-      rgba(248, 247, 243, 0.5) 57%,
-      transparent 75%
+      rgba(248, 247, 243, 0.96) 42%,
+      rgba(248, 247, 243, 0.65) 65%,
+      transparent 80%
     );
   }
 
   .banner-conteudo {
-    width: 100%;
-    padding: 40px 26px 0;
+    max-width: 100%;
+    padding: 30px 16px 0;
   }
 
   .banner-titulo {
-    font-size: clamp(42px, 12vw, 64px);
+    font-size: clamp(40px, 11vw, 56px);
   }
 
   .banner-subtitulo {
-    font-size: 24px;
-  }
-
-  .banner-descricao {
-    max-width: 330px;
+    font-size: 22px;
   }
 
   .banner-onda {
     height: 18%;
+  }
+
+  .sobre-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sobre-grid-item:not(:nth-child(3n))::after {
+    display: none;
+  }
+
+  .sobre-grid-item:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    left: 12%;
+    right: 12%;
+    bottom: 0;
+    height: 1px;
+    background-color: #dfdacd;
+  }
+
+  .gallery-nav-btn {
+    display: none !important;
+  }
+
+  .site-footer {
+    background-image: none;
   }
 }
