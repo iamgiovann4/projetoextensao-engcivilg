@@ -26,6 +26,8 @@ const noticiasDados = [
         Outro ponto importante foi entender a classificação das áreas de risco. Durante o projeto, trabalhamos com níveis como R1, R2, R3 e R4, utilizados para indicar o grau de risco existente em determinada área. Com base nessas classificações e nas informações levantadas, começamos a definir quais locais seriam visitados e acompanhados ao longo do projeto.
       </p>
 
+      <p>Durante essa fase de preparação, também tivemos a oportunidade de participar de um <a href="https://www.ifspcaraguatatuba.edu.br/noticias/alunos-de-engenharia-civil-participam-de-curso-de-reducao-de-riscos-e-desastres" target="_blank">evento organizado pelo CEMADEN Educação</a>, junto com professores da rede estadual de ensino, na sede da Unidade Regional de Ensino de Caraguatatuba. Durante o encontro, aprendemos mais sobre prevenção e redução de riscos de desastres e conseguimos relacionar vários dos assuntos discutidos com o que já estávamos estudando no projeto. Essa experiência também ajudou a ampliar nossa visão antes do início das visitas de campo.</p>
+
       <p>
         Após entender melhor o bairro e selecionar as áreas que fariam parte das próximas etapas, começamos a preparar os materiais que seriam utilizados nas visitas. Foram elaborados dois questionários diferentes. O primeiro será aplicado aos moradores, com perguntas que nos ajudem a entender a experiência de quem vive no local, principalmente em relação a ocorrências de alagamentos, deslizamentos e outros problemas percebidos pela comunidade. O segundo questionário foi preparado para ser preenchido por nós durante as visitas técnicas. Nele, registraremos informações sobre as condições encontradas em cada área, como características do terreno, construções, drenagem, vegetação e outros elementos que possam ajudar na análise do local.
       </p>
@@ -66,7 +68,7 @@ const noticiasDados = [
       <blockquote class="p-3 my-4 rounded-3 border-start border-4" style="background-color: var(--creme); border-color: var(--verde-escuro) !important;">
         <p class="mb-0 fw-semibold" style="color: var(--verde-escuro);">
           “Nosso projeto é construído com a participação de diferentes pessoas e instituições. IFSP, comunidade, Defesa Civil e parceiros podem contribuir para que as ações saiam do planejamento e cheguem ao território.”
-          <cite>(Luana de Melo — aluna)</cite>
+          <cite>(Giovanna Corazza — aluna)</cite>
         </p>
       </blockquote>
       
@@ -99,7 +101,7 @@ const noticiasDados = [
       <blockquote class="p-3 my-4 rounded-3 border-start border-4" style="background-color: var(--creme); border-color: var(--verde-escuro) !important;">
         <p class="mb-0 fw-semibold" style="color: var(--verde-escuro);">
           “Sair da sala de aula e conhecer o território de perto fez toda a diferença. Conseguimos enxergar situações que, antes, conhecíamos apenas por mapas, imagens e relatos.”
-          <cite>(Giovana Corazza — aluna)</cite>
+          <cite>(Yasmin Paz — aluna)</cite>
         </p>
       </blockquote>
       

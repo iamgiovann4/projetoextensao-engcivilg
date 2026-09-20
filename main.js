@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 2. Renderização dinâmica das quatro fotos mais recentes na página inicial
   const galeriaRow = document.querySelector("#galeriaRow");
-  if (galeriaRow && Array.isArray(window.galeriaDados)) {
-    const ultimasFotos = window.galeriaDados.slice(-4).reverse(); // Seleciona as últimas 4 fotos e inverte a ordem (as mais recentes primeiro)
+  if (galeriaRow && Array.isArray(window.galeriaDadosHome)) {
+    const ultimasFotos = window.galeriaDadosHome; // Seleciona as últimas 4 fotos e inverte a ordem (as mais recentes primeiro)
 
     ultimasFotos.forEach((foto) => {
       const col = document.createElement("div");

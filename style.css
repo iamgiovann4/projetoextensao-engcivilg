@@ -869,4 +869,8 @@ body {
   .site-footer {
     background-image: none;
   }
+
+  .banner .carousel-item > .container-xl {
+    height: auto !important;
+  }
 }
