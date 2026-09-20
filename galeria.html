@@ -37,7 +37,9 @@
         cursor: pointer;
         position: relative;
         background-color: #e5e0d3;
-        transition: transform 0.25s ease, box-shadow 0.25s ease;
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease;
       }
       .pure-gallery-card img {
         width: 100%;
@@ -76,9 +78,18 @@
   <body>
     <!-- CABEÇALHO / NAVEGAÇÃO -->
     <header class="site-header sticky-top">
-      <nav class="navbar navbar-expand-lg navbar-light py-2 py-lg-3" aria-label="Navegação Principal">
-        <div class="container-xl d-flex align-items-center justify-content-between">
-          <a href="index.html#inicio" class="navbar-brand p-0 me-2 me-lg-4" aria-label="Página Inicial">
+      <nav
+        class="navbar navbar-expand-lg navbar-light py-2 py-lg-3"
+        aria-label="Navegação Principal"
+      >
+        <div
+          class="container-xl d-flex align-items-center justify-content-between"
+        >
+          <a
+            href="index.html#inicio"
+            class="navbar-brand p-0 me-2 me-lg-4"
+            aria-label="Página Inicial"
+          >
             <img
               src="img/logo.png"
               alt="Projeto de Extensão Olaria - IFSP"
@@ -100,21 +111,52 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse justify-content-center" id="menuPrincipal">
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="menuPrincipal"
+          >
             <ul class="navbar-nav gap-lg-3 my-2 my-lg-0 text-center">
-              <li class="nav-item"><a class="nav-link fw-semibold" href="index.html">Início</a></li>
-              <li class="nav-item"><a class="nav-link fw-semibold" href="index.html#sobre">Sobre o Projeto</a></li>
-              <li class="nav-item"><a class="nav-link active fw-semibold" href="galeria.html">Galeria</a></li>
-              <li class="nav-item"><a class="nav-link fw-semibold" href="noticias.html">Notícias</a></li>
-              <li class="nav-item"><a class="nav-link fw-semibold" href="index.html#contato">Contato</a></li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold" href="index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold" href="index.html#sobre"
+                  >Sobre o Projeto</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-semibold" href="galeria.html"
+                  >Galeria</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold" href="noticias.html"
+                  >Notícias</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold" href="index.html#contato"
+                  >Contato</a
+                >
+              </li>
             </ul>
           </div>
 
           <div class="d-none d-lg-flex align-items-center gap-2">
-            <a href="https://www.instagram.com/projeto.olaria_ifsp?stkn=ejh3YmtyMnZ1MmV5" target="_blank" rel="noopener noreferrer" class="header-social-btn" aria-label="Instagram">
+            <a
+              href="https://www.instagram.com/projeto.olaria_ifsp?stkn=ejh3YmtyMnZ1MmV5"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="header-social-btn"
+              aria-label="Instagram"
+            >
               <i class="fa-brands fa-instagram"></i>
             </a>
-            <a href="mailto:projeto.olariaifsp@gmail.com" class="header-social-btn" aria-label="E-mail">
+            <a
+              href="mailto:projeto.olariaifsp@gmail.com"
+              class="header-social-btn"
+              aria-label="E-mail"
+            >
               <i class="fa-solid fa-envelope"></i>
             </a>
           </div>
@@ -123,203 +165,100 @@
     </header>
 
     <!-- ÁREA PRINCIPAL: APENAS FOTOS -->
-    <main class="py-5" style="background-color: var(--fundo); min-height: 75vh;">
+    <main class="py-5" style="background-color: var(--fundo); min-height: 75vh">
       <div class="container-xl">
         <!-- Navegação Breadcrumb -->
         <nav aria-label="breadcrumb" class="mb-4">
           <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item">
-              <a href="index.html" class="text-decoration-none" style="color: var(--verde-claro);">Início</a>
+              <a
+                href="index.html"
+                class="text-decoration-none"
+                style="color: var(--verde-claro)"
+                >Início</a
+              >
             </li>
-            <li class="breadcrumb-item active" aria-current="page">Galeria de Fotos</li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Galeria de Fotos
+            </li>
           </ol>
         </nav>
 
         <!-- Título simples e direto -->
         <div class="text-center mb-4 mb-lg-5">
-          <h1 class="fw-bolder mb-2" style="color: var(--verde-escuro); font-size: clamp(2rem, 3.2vw, 2.7rem);">
+          <h1
+            class="fw-bolder mb-2"
+            style="
+              color: var(--verde-escuro);
+              font-size: clamp(2rem, 3.2vw, 2.7rem);
+            "
+          >
             Galeria de Fotos
           </h1>
           <div class="heading-line mx-auto"></div>
           <p class="section-subtitle mb-0">
-            Momentos que mostram o projeto Olaria em ação. Todas as fotos são de autoria dos 	alunos participantes.
+            Momentos que mostram o projeto Olaria em ação. Todas as fotos são de
+            autoria dos alunos participantes.
           </p>
         </div>
 
         <!-- Grade de Fotos Puras -->
-        <div class="row g-3 g-md-4" id="gradeFotos">
-
-          <!-- Fotos -->
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="pure-gallery-card shadow-sm" data-bs-toggle="modal" data-bs-target="#fotoModal" data-src="img/galeria21.jpeg" data-caption="Descrição" data-description="Acesso às residências por escadaria improvisada em área inclinada.">
-              <img src="img/galeria21.jpeg" alt="pilar mal feito" loading="lazy" />
-            </div>
-          </div> 
-
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="pure-gallery-card shadow-sm" data-bs-toggle="modal" data-bs-target="#fotoModal" data-src="img/galeria20.jpeg" data-caption="Pilar mal feito" data-description="Residências construídas muito próximas entre si e em diferentes níveis do terreno, junto à encosta e com acabamento incompleto.">
-              <img src="img/galeria20.jpeg" alt="pilar mal feito" loading="lazy" />
-            </div>
-          </div> 
-          
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="pure-gallery-card shadow-sm" data-bs-toggle="modal" data-bs-target="#fotoModal" data-src="img/galeria19.jpeg" data-caption="Pilar mal feito" data-description="Conjunto de moradias implantadas em área de forte declividade, com construções próximas à encosta e acesso por escadarias.">
-              <img src="img/galeria19.jpeg" alt="pilar mal feito" loading="lazy" />
-            </div>
-          </div> 
-
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="pure-gallery-card shadow-sm" data-bs-toggle="modal" data-bs-target="#fotoModal" data-src="img/galeria18.jpeg" data-caption="Pilar mal feito" data-description="Terreno com descarte irregular de resíduos próximo à borda da encosta, situação que pode agravar problemas de drenagem e estabilidade do solo.">
-              <img src="img/galeria18.jpeg" alt="pilar mal feito" loading="lazy" />
-            </div>
-          </div> 
-
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="pure-gallery-card shadow-sm" data-bs-toggle="modal" data-bs-target="#fotoModal" data-src="img/galeria17.jpeg" data-caption="Pilar mal feito">
-              <img src="img/galeria17.jpeg" alt="pilar mal feito" loading="lazy" />
-            </div>
-          </div> 
-
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="pure-gallery-card shadow-sm" data-bs-toggle="modal" data-bs-target="#fotoModal" data-src="img/galeria16.jpeg" data-caption="Pilar mal feito">
-              <img src="img/galeria16.jpeg" alt="pilar mal feito" loading="lazy" />
-            </div>
-          </div> 
-
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="pure-gallery-card shadow-sm" data-bs-toggle="modal" data-bs-target="#fotoModal" data-src="img/galeria15.jpeg" data-caption="Pilar mal feito">
-              <img src="img/galeria15.jpeg" alt="pilar mal feito" loading="lazy" />
-            </div>
-          </div> 
-
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="pure-gallery-card shadow-sm" data-bs-toggle="modal" data-bs-target="#fotoModal" data-src="img/galeria14.jpeg" data-caption="Pilar mal feito">
-              <img src="img/galeria14.jpeg" alt="pilar mal feito" loading="lazy" />
-            </div>
-          </div> 
-
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="pure-gallery-card shadow-sm" data-bs-toggle="modal" data-bs-target="#fotoModal" data-src="img/galeria13.jpeg" data-caption="Pilar mal feito">
-              <img src="img/galeria13.jpeg" alt="pilar mal feito" loading="lazy" />
-            </div>
-          </div> 
-
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="pure-gallery-card shadow-sm" data-bs-toggle="modal" data-bs-target="#fotoModal" data-src="img/galeria12.jpeg" data-caption="Pilar mal feito">
-              <img src="img/galeria12.jpeg" alt="pilar mal feito" loading="lazy" />
-            </div>
-          </div> 
-
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="pure-gallery-card shadow-sm" data-bs-toggle="modal" data-bs-target="#fotoModal" data-src="img/galeria11.jpeg" data-caption="Pilar mal feito">
-              <img src="img/galeria11.jpeg" alt="pilar mal feito" loading="lazy" />
-            </div>
-          </div>   
-
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="pure-gallery-card shadow-sm" data-bs-toggle="modal" data-bs-target="#fotoModal" data-src="img/galeria10.jpeg" data-caption="Pilar mal feito">
-              <img src="img/galeria10.jpeg" alt="pilar mal feito" loading="lazy" />
-            </div>
-          </div>          
-
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="pure-gallery-card shadow-sm" data-bs-toggle="modal" data-bs-target="#fotoModal" data-src="img/galeria9.jpeg" data-caption="Pilar mal feito">
-              <img src="img/galeria9.jpeg" alt="pilar mal feito" loading="lazy" />
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="pure-gallery-card shadow-sm" data-bs-toggle="modal" data-bs-target="#fotoModal" data-src="img/galeria8.jpeg" data-caption="Pilar mal feito">
-              <img src="img/galeria8.jpeg" alt="pilar mal feito" loading="lazy" />
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="pure-gallery-card shadow-sm" data-bs-toggle="modal" data-bs-target="#fotoModal" data-src="img/galeria7.jpeg" data-caption="Pilar mal feito">
-              <img src="img/galeria7.jpeg" alt="pilar mal feito" loading="lazy" />
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="pure-gallery-card shadow-sm" data-bs-toggle="modal" data-bs-target="#fotoModal" data-src="img/galeria6.jpeg" data-caption="Pilar mal feito">
-              <img src="img/galeria6.jpeg" alt="pilar mal feito" loading="lazy" />
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="pure-gallery-card shadow-sm" data-bs-toggle="modal" data-bs-target="#fotoModal" data-src="img/galeria5.jpeg" data-caption="Conversas dos agentes e professor">
-              <img src="img/galeria5.jpeg" alt="Conversas" loading="lazy" />
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="pure-gallery-card shadow-sm" data-bs-toggle="modal" data-bs-target="#fotoModal" data-src="img/galeria4.jpeg" data-caption="Caminhada com a Defesa Civil">
-              <img src="img/galeria4.jpeg" alt="Caminhada na Olaria" loading="lazy" />
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="pure-gallery-card shadow-sm" data-bs-toggle="modal" data-bs-target="#fotoModal" data-src="img/galeria3.jpeg" data-caption="Caminhada com a Defesa Civil">
-              <img src="img/galeria3.jpeg" alt="Caminhada na Olaria" loading="lazy" />
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="pure-gallery-card shadow-sm" data-bs-toggle="modal" data-bs-target="#fotoModal" data-src="img/galeria2.jpeg" data-caption="Caixa d'água no tempo">
-              <img src="img/galeria2.jpeg" alt="Caixa d'água" loading="lazy" />
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="pure-gallery-card shadow-sm" data-bs-toggle="modal" data-bs-target="#fotoModal" data-src="img/galeria1.jpeg" data-caption="Análise com a Defesa Civil">
-              <img src="img/galeria1.jpeg" alt="Análise" loading="lazy" />
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="pure-gallery-card shadow-sm" data-bs-toggle="modal" data-bs-target="#fotoModal" data-src="img/noticia3.jpeg" data-caption="Roda de conversa com a Defesa Civil antes da visita começar">
-              <img src="img/noticia3.jpeg" alt="Roda de conversa" loading="lazy" />
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="pure-gallery-card shadow-sm" data-bs-toggle="modal" data-bs-target="#fotoModal" data-src="img/noticia2.jpeg" data-caption="Camisetas patrocinadas pela empresa Ideal">
-              <img src="img/noticia2.jpeg" alt="Camisetas patrocinadas" loading="lazy" />
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="pure-gallery-card shadow-sm" data-bs-toggle="modal" data-bs-target="#fotoModal" data-src="img/noticia1.png" data-caption="Iniciando em sala de aula">
-              <img src="img/noticia1.png" alt="Sala de aula" loading="lazy" />
-            </div>
-          </div>
-          </div>
-        </div>
+        <div class="row g-3 g-md-4" id="gradeFotos"></div>
 
         <!-- Botão Voltar -->
         <div class="text-center mt-5">
-          <a href="index.html#galeria" class="btn rounded-pill px-4 fw-bold" style="border: 2px solid var(--verde-escuro); color: var(--verde-escuro);">
-            <i class="fa-solid fa-arrow-left me-2"></i> Voltar para a Página Inicial
+          <a
+            href="index.html#galeria"
+            class="btn rounded-pill px-4 fw-bold"
+            style="
+              border: 2px solid var(--verde-escuro);
+              color: var(--verde-escuro);
+            "
+          >
+            <i class="fa-solid fa-arrow-left me-2"></i> Voltar para a Página
+            Inicial
           </a>
         </div>
       </div>
     </main>
 
     <!-- MODAL PARA VISUALIZAR FOTO EM TAMANHO GRANDE (LIGHTBOX) -->
-    <div class="modal fade" id="fotoModal" tabindex="-1" aria-labelledby="fotoModalLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="fotoModal"
+      tabindex="-1"
+      aria-labelledby="fotoModalLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content border-0 rounded-4 overflow-hidden bg-dark">
           <div class="modal-header border-0 pb-0">
-            <h5 class="modal-title text-white small" id="fotoModalLabel">Foto da Galeria</h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            <h5 class="modal-title text-white small" id="fotoModalLabel">
+              Foto da Galeria
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Fechar"
+            ></button>
           </div>
           <div class="modal-body text-center p-3">
-            <img src="" id="modalImg" alt="Foto ampliada" class="img-fluid rounded-3" style="max-height: 75vh; object-fit: contain;" />
-            <!-- <div class="mt-3 mx-auto" 
-            style=" max-width: 600px;">
+            <img
+              src=""
+              id="modalImg"
+              alt="Foto ampliada"
+              class="img-fluid rounded-3"
+              style="max-height: 75vh; object-fit: contain"
+            />
+            <div class="mt-3 mx-auto" style="max-width: 600px">
               <p id="modalCaption" class="text-white mb-1"></p>
-              <p id="modalDescription" class="text-white-50 small mb-0" style="line-height: 1.6;"></p>
-            </div> -->
+              <p
+                id="modalDescription"
+                class="text-white-50 small mb-0"
+                style="line-height: 1.6"
+              ></p>
+            </div>
           </div>
         </div>
       </div>
@@ -352,21 +291,31 @@
                 />
               </div>
 
-              <h4 class="footer-brand-title fw-bold mb-2">Projeto de Extensão Olaria</h4>
+              <h4 class="footer-brand-title fw-bold mb-2">
+                Projeto de Extensão Olaria
+              </h4>
               <p class="footer-text mb-0">
                 Conectando Engenharia Civil e<br />
                 comunidade para compreender áreas de riscos<br />
                 e contribuir com ações de prevenção no bairro Olaria.
               </p>
-              <div class="d-flex" style="gap: 50px;">
-                <div class="footer-apoio mt-4 d-flex align-items-center gap-2"><span class="footer-apoio-titulo">REALIZAÇÃO</span>
+              <div class="d-flex" style="gap: 50px">
+                <div class="footer-apoio mt-4 d-flex align-items-center gap-2">
+                  <span class="footer-apoio-titulo">REALIZAÇÃO</span>
                   <div class="footer-apoio-logo mt-2">
-                    <a href="https://www.ifspcaraguatatuba.edu.br/" target="_blank"><img src="img/ifsp.png" alt="IFSP"/></a>
-                  </div> 
+                    <a
+                      href="https://www.ifspcaraguatatuba.edu.br/"
+                      target="_blank"
+                      ><img src="img/ifsp.png" alt="IFSP"
+                    /></a>
+                  </div>
                 </div>
-                <div class="footer-apoio mt-4 d-flex align-items-center gap-2"><span class="footer-apoio-titulo">APOIO</span>
+                <div class="footer-apoio mt-4 d-flex align-items-center gap-2">
+                  <span class="footer-apoio-titulo">APOIO</span>
                   <div class="footer-apoio-logo mt-2">
-                    <a href="https://idealgrupo.com.br/" target="_blank"><img src="img/parceiro.png" alt="Ideal"/></a>
+                    <a href="https://idealgrupo.com.br/" target="_blank"
+                      ><img src="img/parceiro.png" alt="Ideal"
+                    /></a>
                   </div>
                 </div>
               </div>
@@ -374,7 +323,9 @@
           </div>
 
           <div class="col-lg-2 col-md-6 col-6">
-            <h5 class="footer-col-title fw-bold text-uppercase mb-3">NAVEGAÇÃO</h5>
+            <h5 class="footer-col-title fw-bold text-uppercase mb-3">
+              NAVEGAÇÃO
+            </h5>
             <ul class="list-unstyled footer-links mb-0">
               <li><a href="index.html">Início</a></li>
               <li><a href="index.html#sobre">Sobre o Projeto</a></li>
@@ -385,7 +336,9 @@
           </div>
 
           <div class="col-lg-3 col-md-6 col-6">
-            <h5 class="footer-col-title fw-bold text-uppercase mb-3">CONTATO</h5>
+            <h5 class="footer-col-title fw-bold text-uppercase mb-3">
+              CONTATO
+            </h5>
             <ul class="list-unstyled footer-contact mb-0">
               <li class="mb-2 d-flex align-items-center">
                 <i class="fa-solid fa-phone me-2"></i>
@@ -407,12 +360,24 @@
           </div>
 
           <div class="col-lg-3 col-md-6">
-            <h5 class="footer-col-title fw-bold text-uppercase mb-3">SIGA-NOS</h5>
+            <h5 class="footer-col-title fw-bold text-uppercase mb-3">
+              SIGA-NOS
+            </h5>
             <div class="d-flex gap-2">
-              <a href="https://www.instagram.com/projeto.olaria_ifsp?stkn=ejh3YmtyMnZ1MmV5" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram">
+              <a
+                href="https://www.instagram.com/projeto.olaria_ifsp?stkn=ejh3YmtyMnZ1MmV5"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-social-btn"
+                aria-label="Instagram"
+              >
                 <i class="fa-brands fa-instagram"></i>
               </a>
-              <a href="mailto:projeto.olariaifsp@gmail.com" class="footer-social-btn" aria-label="E-mail">
+              <a
+                href="mailto:projeto.olariaifsp@gmail.com"
+                class="footer-social-btn"
+                aria-label="E-mail"
+              >
                 <i class="fa-solid fa-envelope"></i>
               </a>
             </div>
@@ -423,10 +388,10 @@
       <div class="footer-bottom py-3 text-center position-relative z-2">
         <div class="container-xl">
           <p class="mb-0 copyright-text">
-            © 2026 Instituto Federal de São Paulo - Campus Caraguatatuba. 
-            Todos os direitos reservados.
+            © 2026 Instituto Federal de São Paulo - Campus Caraguatatuba. Todos
+            os direitos reservados.
           </p>
-          <p class="mb-0 copyright-text" style="padding: 5px 0 0 0;">
+          <p class="mb-0 copyright-text" style="padding: 5px 0 0 0">
             Desenvolvido por Giovanna Nicolau
           </p>
         </div>
@@ -435,26 +400,7 @@
 
     <!-- Bootstrap Bundle JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Script Lightbox Modal -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const fotoCards = document.querySelectorAll(".pure-gallery-card");
-        const modalImg = document.getElementById("modalImg");
-        const modalCaption = document.getElementById("modalCaption");
-        const modalDescription = document.getElementById("modalDescription");
-
-        fotoCards.forEach((card) => {
-          card.addEventListener("click", () => {
-            const src = card.getAttribute("data-src");
-            const caption = card.getAttribute("data-caption");
-            const description = card.getAttribute("data-description");
-            if (modalImg) modalImg.src = src;
-            if (modalCaption) modalCaption.textContent = caption;
-            if (modalDescription) modalDescription.textContent = description;
-          });
-        });
-      });
-    </script>
+    <script src="dados-galeria.js"></script>
+    <script src="galeria.js"></script>
   </body>
 </html>

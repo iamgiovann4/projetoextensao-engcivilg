@@ -16,67 +16,32 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 2. Comportamento da Galeria de Fotos na Página Inicial
+  // 2. Renderização dinâmica das quatro fotos mais recentes na página inicial
   const galeriaRow = document.querySelector("#galeriaRow");
-  const btnGaleriaNext = document.querySelector("#btnGaleriaNext");
-  const galeriaDots = document.querySelectorAll("#galeriaIndicators .gallery-dot");
+  if (galeriaRow && Array.isArray(window.galeriaDados)) {
+    const ultimasFotos = window.galeriaDados.reverse().slice(-4); // Seleciona as últimas 4 fotos e inverte a ordem (as mais recentes primeiro)
 
-  const fotosGaleria = [
-    { src: "img/galeria1.jpg", alt: "Estudantes em caminhada na comunidade da Olaria" },
-    { src: "img/galeria2.jpg", alt: "Estudantes plantando mudas juntos" },
-    { src: "img/galeria3.jpg", alt: "Oficina e apresentação em sala de aula" },
-    { src: "img/galeria4.jpg", alt: "Estudantes realizando atividades em horta comunitária" },
-    { src: "img/banner_casas.jpg", alt: "Visão panorâmica da comunidade Olaria" },
-    { src: "img/noticia1.jpg", alt: "Ação comunitária de plantio e sustentabilidade" },
-    { src: "img/noticia2.jpg", alt: "Diálogo aberto com juventude e lideranças locais" },
-    { src: "img/noticia3.jpg", alt: "Registro das ruas e patrimônio do bairro Olaria" },
-  ];
-
-  let galeriaIndiceAtual = 0;
-  const totalGrupos = 4;
-
-  function atualizarGaleria(indice) {
-    galeriaIndiceAtual = indice % totalGrupos;
-
-    galeriaDots.forEach((dot, i) => {
-      if (i === galeriaIndiceAtual) {
-        dot.classList.add("active");
-      } else {
-        dot.classList.remove("active");
-      }
-    });
-
-    if (galeriaRow) {
-      const cards = galeriaRow.querySelectorAll(".gallery-card img");
-      cards.forEach((img, i) => {
-        const fotoIndex = (galeriaIndiceAtual + i) % fotosGaleria.length;
-        img.style.opacity = "0.4";
-        img.style.transform = "scale(0.96)";
-        setTimeout(() => {
-          img.src = fotosGaleria[fotoIndex].src;
-          img.alt = fotosGaleria[fotoIndex].alt;
-          img.style.opacity = "1";
-          img.style.transform = "scale(1)";
-        }, 180);
-      });
-    }
-  }
-
-  if (btnGaleriaNext) {
-    btnGaleriaNext.addEventListener("click", () => {
-      atualizarGaleria((galeriaIndiceAtual + 1) % totalGrupos);
+    ultimasFotos.forEach((foto) => {
+      const col = document.createElement("div");
+      col.className = "col-6 col-md-3";
+      col.innerHTML = `
+        <div class="gallery-card">
+          <img src="${foto.src}" alt="${foto.alt}" loading="lazy" />
+        </div>
+      `;
+      galeriaRow.appendChild(col);
     });
   }
-
-  galeriaDots.forEach((dot, index) => {
-    dot.addEventListener("click", () => {
-      atualizarGaleria(index);
-    });
-  });
 
   // 3. Renderização Dinâmica das Notícias na Página Inicial (Últimas 3 Primeiro via forEach)
-  const containerNoticiasHome = document.getElementById("containerNoticiasHome");
-  if (containerNoticiasHome && window.noticiasDados && Array.isArray(window.noticiasDados)) {
+  const containerNoticiasHome = document.getElementById(
+    "containerNoticiasHome",
+  );
+  if (
+    containerNoticiasHome &&
+    window.noticiasDados &&
+    Array.isArray(window.noticiasDados)
+  ) {
     // Seleciona as últimas 3 notícias do array e inverte a ordem (as mais recentes primeiro)
     const ultimasNoticias = window.noticiasDados.slice(-3).reverse();
 
@@ -123,7 +88,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function destacarMenu() {
     const scrollY = window.pageYOffset || document.documentElement.scrollTop;
-    const headerHeight = document.querySelector(".site-header")?.offsetHeight || 80;
+    const headerHeight =
+      document.querySelector(".site-header")?.offsetHeight || 80;
 
     secoes.forEach((secao) => {
       const topoSecao = secao.offsetTop - headerHeight - 120;
@@ -146,7 +112,10 @@ document.addEventListener("DOMContentLoaded", () => {
       navLinks.forEach((link) => {
         if (link.getAttribute("href") === "#inicio") {
           link.classList.add("active");
-        } else if (link.getAttribute("href") && link.getAttribute("href").startsWith("#")) {
+        } else if (
+          link.getAttribute("href") &&
+          link.getAttribute("href").startsWith("#")
+        ) {
           link.classList.remove("active");
         }
       });
@@ -158,7 +127,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // 5. Fechar Menu Mobile ao Clicar em um Link
   const menuColapsavel = document.getElementById("menuPrincipal");
   if (menuColapsavel && window.bootstrap) {
-    const bsCollapse = new bootstrap.Collapse(menuColapsavel, { toggle: false });
+    const bsCollapse = new bootstrap.Collapse(menuColapsavel, {
+      toggle: false,
+    });
     navLinks.forEach((link) => {
       link.addEventListener("click", () => {
         if (menuColapsavel.classList.contains("show")) {
@@ -179,6 +150,6 @@ document.addEventListener("DOMContentLoaded", () => {
         siteHeader.classList.remove("shadow-sm");
       }
     },
-    { passive: true }
+    { passive: true },
   );
 });
