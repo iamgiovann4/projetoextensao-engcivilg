@@ -39,9 +39,8 @@ const noticiasDados = [
       <blockquote class="p-3 my-4 rounded-3 border-start border-4" style="background-color: var(--creme); border-color: var(--verde-escuro) !important;">
         <p class="mb-0 fw-semibold" style="color: var(--verde-escuro);">
           “Antes de ir a campo, precisávamos entender o bairro, conhecer os riscos existentes e preparar uma forma organizada de registrar tudo o que encontrássemos durante as visitas.”
-          <br>
-          <cite>Giovanna Nicolau — aluna autora do projeto</cite>
         </p>
+        <cite style="font-size: 14px;">Giovanna Nicolau — estudante de Engenharia Civil e desenvolvedora do site</cite>
       </blockquote>
 
       <p>
@@ -69,9 +68,8 @@ const noticiasDados = [
       <blockquote class="p-3 my-4 rounded-3 border-start border-4" style="background-color: var(--creme); border-color: var(--verde-escuro) !important;">
         <p class="mb-0 fw-semibold" style="color: var(--verde-escuro);">
           “Nosso projeto é construído com a participação de diferentes pessoas e instituições. IFSP, comunidade, Defesa Civil e parceiros podem contribuir para que as ações saiam do planejamento e cheguem ao território.”
-          <br>
-          <cite>Giovanna Corazza — aluna</cite>
         </p>
+        <cite style="font-size: 14px;">Giovanna Corazza — estudante de Engenharia Civil</cite>
       </blockquote>
       
       <p>O objetivo do projeto é aproximar o conhecimento desenvolvido no curso de Engenharia Civil da realidade do bairro Olaria, buscando compreender melhor as áreas que precisam de atenção e contribuir para futuras ações de prevenção.</p>
@@ -103,9 +101,8 @@ const noticiasDados = [
       <blockquote class="p-3 my-4 rounded-3 border-start border-4" style="background-color: var(--creme); border-color: var(--verde-escuro) !important;">
         <p class="mb-0 fw-semibold" style="color: var(--verde-escuro);">
           “Sair da sala de aula e conhecer o território de perto fez toda a diferença. Conseguimos enxergar situações que, antes, conhecíamos apenas por mapas, imagens e relatos.”
-          <br>
-          <cite>Yasmin Paz — aluna</cite>
         </p>
+        <cite style="font-size: 14px;">Yasmin Paz — estudante de Engenharia Civil</cite>
       </blockquote>
       
       <p>Essa visita faz parte da iniciativa “Prevenção de Desastres no Bairro Olaria”, que busca aproximar os conhecimentos da Engenharia Civil da realidade da comunidade. Nosso propósito é compreender melhor as áreas de risco e, junto com a Defesa Civil e os moradores, contribuir para ações de prevenção.</p>

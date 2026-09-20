@@ -583,6 +583,10 @@ body {
   transform: translateX(4px);
 }
 
+cite {
+  fonte-size: 15px;
+}
+
 /* ==========================================================================
    6. RODAPÉ (FOOTER)
    ========================================================================== */
@@ -825,7 +829,15 @@ body {
   .banner-foto {
     object-position: 62% center;
   }
-
+  .position-r{
+    object-position: left;
+  }
+  .position-rb{
+    object-position: left top;
+  }
+  .position-b{
+    object-position: top center;
+  }
   .banner .carousel-item::after {
     background: linear-gradient(
       to bottom,
