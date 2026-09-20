@@ -39,7 +39,8 @@ const noticiasDados = [
       <blockquote class="p-3 my-4 rounded-3 border-start border-4" style="background-color: var(--creme); border-color: var(--verde-escuro) !important;">
         <p class="mb-0 fw-semibold" style="color: var(--verde-escuro);">
           “Antes de ir a campo, precisávamos entender o bairro, conhecer os riscos existentes e preparar uma forma organizada de registrar tudo o que encontrássemos durante as visitas.”
-          <cite>(Giovanna Nicolau — aluna autora do projeto)</cite>
+          <br>
+          <cite>Giovanna Nicolau — aluna autora do projeto</cite>
         </p>
       </blockquote>
 
@@ -68,7 +69,8 @@ const noticiasDados = [
       <blockquote class="p-3 my-4 rounded-3 border-start border-4" style="background-color: var(--creme); border-color: var(--verde-escuro) !important;">
         <p class="mb-0 fw-semibold" style="color: var(--verde-escuro);">
           “Nosso projeto é construído com a participação de diferentes pessoas e instituições. IFSP, comunidade, Defesa Civil e parceiros podem contribuir para que as ações saiam do planejamento e cheguem ao território.”
-          <cite>(Giovanna Corazza — aluna)</cite>
+          <br>
+          <cite>Giovanna Corazza — aluna</cite>
         </p>
       </blockquote>
       
@@ -101,7 +103,8 @@ const noticiasDados = [
       <blockquote class="p-3 my-4 rounded-3 border-start border-4" style="background-color: var(--creme); border-color: var(--verde-escuro) !important;">
         <p class="mb-0 fw-semibold" style="color: var(--verde-escuro);">
           “Sair da sala de aula e conhecer o território de perto fez toda a diferença. Conseguimos enxergar situações que, antes, conhecíamos apenas por mapas, imagens e relatos.”
-          <cite>(Yasmin Paz — aluna)</cite>
+          <br>
+          <cite>Yasmin Paz — aluna</cite>
         </p>
       </blockquote>
       
