@@ -74,7 +74,7 @@ const noticiasDados = [
       
       <p>Agradecemos à Ideal pelo apoio ao projeto e por contribuir com uma iniciativa desenvolvida por estudantes e voltada para a comunidade.</p>
 
-      <img src=img/parceiro.png style="width: 100px "></img>
+      <a href="https://idealgrupo.com.br/" target="_blank"><img src=img/parceiro.png style="width: 100px "></img></a>
     `,
   },
 
