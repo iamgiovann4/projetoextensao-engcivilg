@@ -36,8 +36,9 @@ const noticiasDados = [
 
       <blockquote class="p-3 my-4 rounded-3 border-start border-4" style="background-color: var(--creme); border-color: var(--verde-escuro) !important;">
         <p class="mb-0 fw-semibold" style="color: var(--verde-escuro);">
-          "Antes de ir a campo, precisávamos entender o bairro, conhecer os riscos existentes e preparar uma forma organizada de registrar tudo o que encontrássemos durante as visitas."
-          </p>
+          “Antes de ir a campo, precisávamos entender o bairro, conhecer os riscos existentes e preparar uma forma organizada de registrar tudo o que encontrássemos durante as visitas.”
+          <cite>(Giovanna Nicolau — aluna autora do projeto)</cite>
+        </p>
       </blockquote>
 
       <p>
@@ -63,7 +64,10 @@ const noticiasDados = [
       <p>Esse apoio chega em um momento importante do projeto, em que estamos nos preparando para iniciar as atividades diretamente no bairro. Entre as próximas etapas está a visita técnica acompanhada pela Defesa Civil, quando teremos a oportunidade de conhecer de perto algumas das áreas que serão estudadas ao longo do trabalho. Além de contribuir com a identificação da equipe, a parceria mostra como empresas também podem participar de iniciativas desenvolvidas dentro da universidade e voltadas diretamente para a comunidade.</p>
       
       <blockquote class="p-3 my-4 rounded-3 border-start border-4" style="background-color: var(--creme); border-color: var(--verde-escuro) !important;">
-        <p class="mb-0 fw-semibold" style="color: var(--verde-escuro);">"Nosso projeto é construído com a participação de diferentes pessoas e instituições. IFSP, comunidade, Defesa Civil e parceiros podem contribuir para que as ações saiam do planejamento e cheguem ao território."</p>
+        <p class="mb-0 fw-semibold" style="color: var(--verde-escuro);">
+          “Nosso projeto é construído com a participação de diferentes pessoas e instituições. IFSP, comunidade, Defesa Civil e parceiros podem contribuir para que as ações saiam do planejamento e cheguem ao território.”
+          <cite>(Luana de Melo — aluna)</cite>
+        </p>
       </blockquote>
       
       <p>O objetivo do projeto é aproximar o conhecimento desenvolvido no curso de Engenharia Civil da realidade do bairro Olaria, buscando compreender melhor as áreas que precisam de atenção e contribuir para futuras ações de prevenção.</p>
@@ -93,7 +97,10 @@ const noticiasDados = [
       <p>Durante a atividade, utilizamos as camisetas do projeto, o que facilitou a identificação da nossa equipe enquanto circulávamos pelo bairro e também ajudou na aproximação com a comunidade.</p>
       
       <blockquote class="p-3 my-4 rounded-3 border-start border-4" style="background-color: var(--creme); border-color: var(--verde-escuro) !important;">
-        <p class="mb-0 fw-semibold" style="color: var(--verde-escuro);">"Sair da sala de aula e conhecer o território de perto fez toda a diferença. Conseguimos enxergar situações que, antes, conhecíamos apenas por mapas, imagens e relatos."</p>
+        <p class="mb-0 fw-semibold" style="color: var(--verde-escuro);">
+          “Sair da sala de aula e conhecer o território de perto fez toda a diferença. Conseguimos enxergar situações que, antes, conhecíamos apenas por mapas, imagens e relatos.”
+          <cite>(Giovana Corazza — aluna)</cite>
+        </p>
       </blockquote>
       
       <p>Essa visita faz parte da iniciativa “Prevenção de Desastres no Bairro Olaria”, que busca aproximar os conhecimentos da Engenharia Civil da realidade da comunidade. Nosso propósito é compreender melhor as áreas de risco e, junto com a Defesa Civil e os moradores, contribuir para ações de prevenção.</p>
