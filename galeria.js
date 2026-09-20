@@ -23,7 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
         modalImg.src = foto.src;
         modalImg.alt = foto.alt;
       }
-      if (modalCaption) modalCaption.textContent = foto.legenda || "";
+      if (modalCaption) modalCaption.innerHTML = 
+        `<i class="fa-solid fa-camera me-2" aria-hidden="true"></i>
+        ${foto.legenda || ""}`;
       if (modalDescription) modalDescription.textContent = foto.descricao || "";
     });
 
