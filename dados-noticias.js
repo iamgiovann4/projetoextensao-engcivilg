@@ -37,7 +37,7 @@ const noticiasDados = [
       </p>
 
       <blockquote class="p-3 my-4 rounded-3 border-start border-4" style="background-color: var(--creme); border-color: var(--verde-escuro) !important;">
-        <p class="mb-0 fw-semibold" style="color: var(--verde-escuro);">
+        <p class="mb-0 fw-semibold" style="color: var(--verde-escuro); text-align: left;">
           “Antes de ir a campo, precisávamos entender o bairro, conhecer os riscos existentes e preparar uma forma organizada de registrar tudo o que encontrássemos durante as visitas.”
         </p>
         <cite style="font-size: 14px;">Giovanna Nicolau — estudante de Engenharia Civil e desenvolvedora do site</cite>
@@ -66,7 +66,7 @@ const noticiasDados = [
       <p>Esse apoio chega em um momento importante do projeto, em que estamos nos preparando para iniciar as atividades diretamente no bairro. Entre as próximas etapas está a visita técnica acompanhada pela Defesa Civil, quando teremos a oportunidade de conhecer de perto algumas das áreas que serão estudadas ao longo do trabalho. Além de contribuir com a identificação da equipe, a parceria mostra como empresas também podem participar de iniciativas desenvolvidas dentro da universidade e voltadas diretamente para a comunidade.</p>
       
       <blockquote class="p-3 my-4 rounded-3 border-start border-4" style="background-color: var(--creme); border-color: var(--verde-escuro) !important;">
-        <p class="mb-0 fw-semibold" style="color: var(--verde-escuro);">
+        <p class="mb-0 fw-semibold" style="color: var(--verde-escuro); text-align: left;">
           “Nosso projeto é construído com a participação de diferentes pessoas e instituições. IFSP, comunidade, Defesa Civil e parceiros podem contribuir para que as ações saiam do planejamento e cheguem ao território.”
         </p>
         <cite style="font-size: 14px;">Giovanna Corazza — estudante de Engenharia Civil</cite>
@@ -99,7 +99,7 @@ const noticiasDados = [
       <p>Durante a atividade, utilizamos as camisetas do projeto, o que facilitou a identificação da nossa equipe enquanto circulávamos pelo bairro e também ajudou na aproximação com a comunidade.</p>
       
       <blockquote class="p-3 my-4 rounded-3 border-start border-4" style="background-color: var(--creme); border-color: var(--verde-escuro) !important;">
-        <p class="mb-0 fw-semibold" style="color: var(--verde-escuro);">
+        <p class="mb-0 fw-semibold" style="color: var(--verde-escuro); text-align: left;">
           “Sair da sala de aula e conhecer o território de perto fez toda a diferença. Conseguimos enxergar situações que, antes, conhecíamos apenas por mapas, imagens e relatos.”
         </p>
         <cite style="font-size: 14px;">Yasmin Paz — estudante de Engenharia Civil</cite>
