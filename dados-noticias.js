@@ -69,7 +69,7 @@ const noticiasDados = [
         <p class="mb-0 fw-semibold" style="color: var(--verde-escuro); text-align: left;">
           “Nosso projeto é construído com a participação de diferentes pessoas e instituições. IFSP, comunidade, Defesa Civil e parceiros podem contribuir para que as ações saiam do planejamento e cheguem ao território.”
         </p>
-        <cite style="font-size: 14px;">Giovanna Corazza — estudante de Engenharia Civil</cite>
+        <cite style="font-size: 14px;">Giovana Corazza — estudante de Engenharia Civil</cite>
       </blockquote>
       
       <p>O objetivo do projeto é aproximar o conhecimento desenvolvido no curso de Engenharia Civil da realidade do bairro Olaria, buscando compreender melhor as áreas que precisam de atenção e contribuir para futuras ações de prevenção.</p>
