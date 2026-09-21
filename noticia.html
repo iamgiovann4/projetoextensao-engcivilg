@@ -4,6 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Notícia – Projeto de Extensão Olaria</title>
+    <meta name="description" content="Leia as notícias e os registros das ações do Projeto de Extensão Olaria, iniciativa de Engenharia Civil do IFSP Caraguatatuba." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://projetoextensaoolaria.vercel.app/noticia.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="Notícia – Projeto de Extensão Olaria" />
+    <meta property="og:description" content="Confira as atualizações do Projeto Olaria no bairro Olaria." />
+    <meta property="og:url" content="https://projetoextensaoolaria.vercel.app/noticia.html" />
+    <meta property="og:image" content="https://projetoextensaoolaria.vercel.app/img/noticia3.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Notícia – Projeto de Extensão Olaria" />
+    <meta name="twitter:description" content="Confira as atualizações do Projeto Olaria no bairro Olaria." />
+    <meta name="twitter:image" content="https://projetoextensaoolaria.vercel.app/img/noticia3.jpeg" />
+    <script id="dadosEstruturadosNoticia" type="application/ld+json"></script>
 
     <!-- Google Fonts: Plus Jakarta Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -493,6 +507,57 @@
 
         // Atualização do título da página
         document.title = `${noticiaAtual.titulo} – Projeto Olaria`;
+        const urlNoticia = window.location.href;
+        const descricaoNoticia = noticiaAtual.descricao;
+        document.querySelector('meta[name="description"]').setAttribute("content", descricaoNoticia);
+        document.querySelector('link[rel="canonical"]').setAttribute("href", urlNoticia);
+        document.querySelector('meta[property="og:title"]').setAttribute("content", document.title);
+        document.querySelector('meta[property="og:description"]').setAttribute("content", descricaoNoticia);
+        document.querySelector('meta[property="og:url"]').setAttribute("content", urlNoticia);
+        document.querySelector('meta[property="og:image"]').setAttribute(
+          "content",
+          new URL(noticiaAtual.img, window.location.href).href,
+        );
+        document.querySelector('meta[name="twitter:title"]').setAttribute("content", document.title);
+        document.querySelector('meta[name="twitter:description"]').setAttribute("content", descricaoNoticia);
+        document.querySelector('meta[name="twitter:image"]')?.setAttribute(
+          "content",
+          new URL(noticiaAtual.img, window.location.href).href,
+        );
+        const dataPublicacao = noticiaAtual.data
+          .replace(" de ", "-")
+          .replace(" de ", "-")
+          .replace("janeiro", "01")
+          .replace("fevereiro", "02")
+          .replace("março", "03")
+          .replace("abril", "04")
+          .replace("maio", "05")
+          .replace("junho", "06")
+          .replace("julho", "07")
+          .replace("agosto", "08")
+          .replace("setembro", "09")
+          .replace("outubro", "10")
+          .replace("novembro", "11")
+          .replace("dezembro", "12");
+        document.getElementById("dadosEstruturadosNoticia").textContent = JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "NewsArticle",
+          "headline": noticiaAtual.titulo,
+          "description": descricaoNoticia,
+          "image": [new URL(noticiaAtual.img, window.location.href).href],
+          "datePublished": dataPublicacao.split("-").reverse().join("-"),
+          "dateModified": dataPublicacao.split("-").reverse().join("-"),
+          "author": {
+            "@type": "Organization",
+            "name": "Projeto de Extensão Olaria - IFSP Caraguatatuba",
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Instituto Federal de São Paulo - Campus Caraguatatuba",
+          },
+          "mainEntityOfPage": { "@type": "WebPage", "@id": urlNoticia },
+          "inLanguage": "pt-BR",
+        });
         document.getElementById("breadcrumbTitulo").textContent =
           noticiaAtual.titulo;
 
