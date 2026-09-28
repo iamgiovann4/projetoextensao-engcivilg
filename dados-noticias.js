@@ -52,18 +52,20 @@ const noticiasDados = [
   {
     id: 2,
     titulo:
-      "Ideal apoia o Projeto Olaria",
+      "Empresas parceiras apoiam o Projeto Olaria",
     categoria: "PARCERIA",
     data: "24 de agosto de 2026",
     descricao:
       "A empresa Ideal apoiou nosso projeto com o patrocínio das camisetas utilizadas pelos alunos durante as atividades de campo.",
     img: "img/noticia2.jpeg",
     conteudo: `
-      <p class="subtitulo"><strong><i>Nosso projeto também conta com a colaboração de parceiros. A empresa Ideal apoiou a iniciativa por meio do patrocínio das camisetas que serão utilizadas pelos alunos durante as atividades realizadas no bairro Olaria.</i></strong></p>
+      <p class="subtitulo"><strong><i>Nosso projeto também conta com a colaboração de parceiros que acreditam na iniciativa e contribuem para que nossas ações aconteçam de forma ainda mais organizada e próxima da comunidade. A empresa Ideal apoiou a iniciativa por meio do patrocínio das camisetas utilizadas pelos alunos durante as atividades realizadas no bairro Olaria. Além disso, a Litoral Madeiras passou a integrar essa rede de parceiros, contribuindo com a doação dos bonés utilizados pela equipe durante as ações do projeto.</i></strong></p>
       
       <p>As camisetas farão parte da identificação visual da equipe durante as visitas de campo, ajudando na organização do grupo e facilitando o reconhecimento dos estudantes pelos moradores da comunidade. Para nós, isso ajuda não apenas na organização do grupo, mas também na aproximação com os moradores. Quando estamos circulando pelo bairro, a camiseta facilita a identificação de quem faz parte do projeto e ajuda a apresentar nossa presença na comunidade de uma maneira mais organizada.</p>
+
+      <p>A parceria com a Litoral Madeiras também contribuiu para a identificação e padronização visual da equipe. A empresa realizou a doação dos bonés utilizados pelos integrantes do projeto durante as atividades de campo, complementando as camisetas e facilitando o reconhecimento dos estudantes pela comunidade.</p>
       
-      <p>Esse apoio chega em um momento importante do projeto, em que estamos nos preparando para iniciar as atividades diretamente no bairro. Entre as próximas etapas está a visita técnica acompanhada pela Defesa Civil, quando teremos a oportunidade de conhecer de perto algumas das áreas que serão estudadas ao longo do trabalho. Além de contribuir com a identificação da equipe, a parceria mostra como empresas também podem participar de iniciativas desenvolvidas dentro da universidade e voltadas diretamente para a comunidade.</p>
+      <p>Essas parcerias chegam em um momento importante do projeto, em que estamos nos preparando para iniciar as atividades diretamente no bairro. Entre as próximas etapas está a visita técnica acompanhada pela Defesa Civil, quando teremos a oportunidade de conhecer de perto algumas das áreas que serão estudadas ao longo do trabalho. Além de contribuir com a identificação da equipe, a parceria mostra como empresas também podem participar de iniciativas desenvolvidas dentro da universidade e voltadas diretamente para a comunidade.</p>
       
       <blockquote class="p-3 my-4 rounded-3 border-start border-4" style="background-color: var(--creme); border-color: var(--verde-escuro) !important;">
         <p class="mb-0 fw-semibold" style="color: var(--verde-escuro); text-align: left;">
@@ -74,9 +76,13 @@ const noticiasDados = [
       
       <p>O objetivo do projeto é aproximar o conhecimento desenvolvido no curso de Engenharia Civil da realidade do bairro Olaria, buscando compreender melhor as áreas que precisam de atenção e contribuir para futuras ações de prevenção.</p>
       
-      <p>Agradecemos à Ideal pelo apoio ao projeto e por contribuir com uma iniciativa desenvolvida por estudantes e voltada para a comunidade.</p>
+      <p>Agradecemos à Ideal e à Litoral Madeiras pelo apoio ao projeto e por contribuírem com uma iniciativa desenvolvida por estudantes e voltada para a comunidade.</p>
 
-      <a href="https://idealgrupo.com.br/" target="_blank"><img src=img/parceiro.png style="width: 100px "></img></a>
+      <div > 
+        <a href="https://idealgrupo.com.br/" target="_blank"><img src=img/parceiro2.png style="width: 100px "></img></a>
+        <a href="https://idealgrupo.com.br/" target="_blank"><img src=img/parceiro.png style="width: 100px "></img></a>
+      </div>
+     
     `,
   },
 
@@ -111,41 +117,42 @@ const noticiasDados = [
     `,
   },
 
-  // {
-  //   id: 4,
-  //   titulo:
-  //     "O que encontramos em campo: pontos de atenção no bairro Olaria",
-  //   categoria: "ENGENHARIA",
-  //   data: "29 de agosto de 2026",
-  //   descricao:
-  //     "Durante a visita, registramos situações relacionadas a encostas, drenagem, construções, vegetação e condições do espaço urbano.",
-  //   img: "img/noticia3.jpg",
-  //   conteudo: `
-  //     <p class="lead">Durante nossa visita técnica pelo bairro Olaria, acompanhados pela Defesa Civil, registramos diferentes situações que chamaram nossa atenção e que agora fazem parte do material de estudo do projeto.</p>
+  {
+    id: 4,
+    titulo:
+      "Alunos preparam folders para as próximas visitas",
+    categoria: "ENGENHARIA",
+    data: "21 de setembro de 2026",
+    descricao:
+      "Em uma atividade prática, os estudantes criaram materiais informativos que serão utilizados no contato com os moradores da comunidade.",
+    img: "img/noticia4.jpg",
+    conteudo: `
+      <p class="subtitulo"><strong><i>Para nos prepararmos para o próximo contato com os moradores do bairro Olaria, tivemos uma aula diferente e bastante prática. Fomos divididos em três grupos e cada grupo ficou responsável por elaborar uma proposta de folder sobre o projeto e a prevenção de desastres.</i></strong></p>
       
-  //     <p>Ao longo do percurso, observamos como características do terreno, ocupação das encostas, drenagem, vegetação e construções se relacionam dentro do bairro. Para nós, foi uma oportunidade de enxergar na prática temas que fazem parte da Engenharia Civil.</p>
+      <p>A ideia era criar um material que levasse informações importantes para os moradores, mas de uma forma simples e próxima. Por isso, em vez de fazermos algo muito simétrico e certinho, trabalhamos com recortes, colagens e diferentes formas de organizar os elementos. A proposta era justamente deixar o folder mais espontâneo e visual, buscando chamar a atenção e facilitar nossa aproximação com a comunidade.</p>
       
-  //     <p>Em alguns pontos, encontramos terrenos bastante inclinados e áreas com plantações de bananeiras. Esse tipo de local merece atenção principalmente em períodos de chuva, quando o terreno pode ficar mais úmido e escorregadio.</p>
+      <p>Durante a atividade, cada grupo pôde pensar livremente na composição do seu material, escolhendo como distribuir os textos, imagens e demais elementos. Mesmo trabalhando a partir das mesmas informações principais, surgiram propostas diferentes, mostrando como um mesmo conteúdo pode ser apresentado de várias maneiras.</p>
+
+      <blockquote class="p-3 my-4 rounded-3 border-start border-4" style="background-color: var(--creme); border-color: var(--verde-escuro) !important;">
+        <p class="mb-0 fw-semibold" style="color: var(--verde-escuro); text-align: left;">
+          “Foi uma atividade bem diferente do que estamos acostumados. Tivemos que pensar não só nas informações que queríamos passar, mas também em como fazer isso de uma maneira que chamasse a atenção e fosse fácil para os moradores entenderem.”
+        </p>
+        <cite style="font-size: 14px;">Luana de Melo — estudante de Engenharia Civil</cite>
+      </blockquote>
       
-  //     <p>Também observamos residências construídas próximas a encostas e em terrenos com bastante declive, algumas delas próximas à rodovia. Em determinados locais, encontramos ainda árvores inclinadas próximas às casas.</p>
+      <p>Além da parte criada por cada grupo, algumas informações precisavam estar presentes no material, como os mapas das áreas de risco, orientações de prevenção, sinais de alerta, contatos de emergência e o QR Code do Instagram do projeto. O folder também apresenta o Projeto de Extensão dos alunos de Engenharia Civil do IFSP – Campus Caraguatatuba e identifica o bairro Olaria como local das nossas atividades.</p>
       
-  //     <p>Durante o trajeto, registramos também <strong>muros com trincas, áreas com solo exposto e terrenos onde já ocorreram demolições</strong>. Esses pontos foram fotografados e anotados para que possamos estudar cada situação com mais cuidado nas próximas etapas.</p>
-      
-  //     <p>Outro assunto que apareceu bastante durante a visita foi a <strong>drenagem da água da chuva</strong>. Encontramos locais onde o escoamento merece atenção e observamos uma galeria que, segundo as informações recebidas durante a visita, pode apresentar dificuldades em determinadas situações de maior volume de água.</p>
-      
-  //     <p>Também vimos terrenos baldios com presença de lixo. Além da questão ambiental, resíduos descartados de forma inadequada podem chegar aos sistemas de drenagem e prejudicar o escoamento da água.</p>
-      
-  //     <p>Em outro ponto, observamos uma caixa-d'água instalada sobre uma residência com tubulações direcionadas para o terreno. Situações como essa também entram em nossa análise, principalmente quando há presença frequente de água em terrenos inclinados.</p>
-      
-  //     <blockquote class="p-3 my-4 rounded-3 border-start border-4" style="background-color: var(--creme); border-color: var(--verde-escuro) !important;">
-  //       <p class="mb-0 fw-semibold" style="color: var(--verde-escuro);">"Cada ponto observado em campo ajuda a gente a entender melhor como o bairro funciona e quais situações precisam ser estudadas com mais atenção."</p>
-  //     </blockquote>
-      
-  //     <p>Além dessas questões, também registramos situações relacionadas à acessibilidade e às condições dos espaços públicos. A visita mostrou para nós que analisar um bairro envolve olhar para diferentes aspectos ao mesmo tempo.</p>
-      
-  //     <p>Agora, todo esse material será organizado para as próximas etapas do projeto. Nossa intenção é continuar estudando esses pontos, relacionar as observações com o conhecimento técnico e aprofundar as análises com o apoio da Defesa Civil.</p>
-  //   `,
-  // },
+      <p>Um dos pontos mais importantes dessa atividade foi pensar em quem receberá esse material. Como o folder será entregue durante nossas visitas ao bairro, buscamos organizar as informações de uma maneira que pudesse auxiliar a conversa com os moradores, tornando assuntos relacionados às áreas de risco e à prevenção mais fáceis de visualizar e compreender.</p>
+
+      <p>Depois de finalizarmos a proposta, o folder foi digitalizado e seguimos para a preparação dos materiais. Imprimimos, recortamos e dobramos cada um deles para deixar tudo pronto para nossa próxima visita ao bairro.</p>
+
+      <p>Essa etapa também fez parte da experiência. Depois de passarmos pela criação manual, pudemos acompanhar o material saindo do papel e chegando à sua versão final, que será levada para a comunidade durante as próximas atividades de campo.</p>
+
+      <p>Foi uma aula trabalhosa, mas também muito legal. Além de colocarmos a criatividade em prática, conseguimos preparar um material que será importante para apresentarmos o projeto e iniciarmos uma aproximação ainda maior com os moradores do Olaria.</p>
+
+      <p>Agora, com os folders prontos, seguimos para a próxima etapa do projeto: voltar ao bairro, conversar com os moradores e utilizar o material que nós mesmos desenvolvemos para apoiar esse primeiro contato.</p>
+    `,
+  },
 ];
 
 // Disponível no escopo global
