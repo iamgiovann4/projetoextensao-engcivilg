@@ -176,7 +176,7 @@ const noticiasDados = [
         <p class="mb-0 fw-semibold" style="color: var(--verde-escuro); text-align: left;">
           “Uma coisa é analisar o bairro como estudante de Engenharia, outra é ouvir quem mora ali todos os dias. Conversando com os moradores, conseguimos perceber detalhes que só a análise técnica não mostraria.”
         </p>
-        <cite style="font-size: 14px;">Maria Clara — estudante de Engenharia Civil</cite>
+        <cite style="font-size: 14px;">Maria Clara — estudante de Engenharia Civil</cite>'
       </blockquote>
       
       <p>A chuva acabou tornando a visita ainda mais importante. Em vez de adiarmos a atividade, entendemos que aquele também era um momento interessante para observar o bairro em uma condição diferente e, principalmente, manter o contato que havíamos planejado com a comunidade.</p>
