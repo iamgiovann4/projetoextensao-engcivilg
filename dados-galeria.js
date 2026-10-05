@@ -218,15 +218,21 @@ const galeriaDados = [
     alt: "",
     legenda: 'Alunos do IFSP.',
   },
-    {
+  {
     id: 37,
     src: "img/galeria32.jpeg",
     alt: "",
     legenda: 'Alunos do IFSP.',
   },
-    {
+  {
     id: 38,
     src: "img/galeria33.jpeg",
+    alt: "",
+    legenda: 'Alunos do IFSP.',
+  },
+  {
+    id: 39,
+    src: "img/galeria34.jpeg",
     alt: "",
     legenda: 'Alunos do IFSP.',
   },
