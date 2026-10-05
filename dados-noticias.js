@@ -183,7 +183,7 @@ const noticiasDados = [
 
       <p>Ao final de cada entrevista, também entregamos aos moradores o folder que havíamos preparado anteriormente, com informações sobre as áreas de risco do bairro, sinais de alerta, orientações de prevenção e contatos de emergência. Assim, além de coletarmos informações, também conseguimos levar um pouco do conhecimento desenvolvido pelo projeto até as pessoas.</p>
       
-      <p>Nessa primeira etapa das entrevistas, conseguimos conversar com cerca de 15 moradores. Cada relato trouxe uma percepção diferente sobre o bairro e ajudou a complementar aquilo que conseguimos enxergar apenas por meio das análises técnicas.</p>
+      <p>Nessa primeira etapa das entrevistas, conseguimos conversar com cerca de 13 moradores. Cada relato trouxe uma percepção diferente sobre o bairro e ajudou a complementar aquilo que conseguimos enxergar apenas por meio das análises técnicas.</p>
 
       <p>Mais do que preencher questionários, essa visita nos permitiu ouvir quem vive diariamente naquela realidade. Aos poucos, estamos juntando o conhecimento aprendido em sala de aula, nossas observações em campo e a experiência dos próprios moradores para construir uma visão cada vez mais completa sobre o bairro Olaria.</p>
     `,
