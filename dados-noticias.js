@@ -153,6 +153,41 @@ const noticiasDados = [
       <p>Agora, com os folders prontos, seguimos para a próxima etapa do projeto: voltar ao bairro, conversar com os moradores e utilizar o material que nós mesmos desenvolvemos para apoiar esse primeiro contato.</p>
     `,
   },
+
+    {
+    id: 5,
+    titulo:
+      "Segunda visita ao bairro Olaria aproxima estudantes e moradores",
+    categoria: "PREVENÇÃO",
+    data: "28 de setembro de 2026",
+    descricao:
+      "Mesmo com a chuva, realizamos entrevistas com moradores, distribuímos os folders e analisamos as condições do bairro.",
+    img: "img/noticia5.jpeg",
+    conteudo: `
+      <p class="subtitulo"><strong><i>Na nossa segunda visita ao bairro Olaria, tivemos um contato ainda mais próximo com os moradores. Mesmo com a chuva, fomos até a comunidade para realizar as primeiras entrevistas, observar as condições do local e entender melhor como algumas situações de risco fazem parte da rotina de quem vive no bairro.</i></strong></p>
+      
+      <p>Para realizar a atividade, fomos divididos em grupos e seguimos por diferentes pontos do bairro. Nosso objetivo era conversar diretamente com os moradores e reunir informações que complementassem tudo o que já havíamos observado e estudado nas etapas anteriores do projeto.</p>
+      
+      <p>Durante cada entrevista, preenchíamos dois questionários diferentes. O primeiro era respondido a partir da conversa com o próprio morador, com perguntas sobre sua experiência no bairro, situações já vivenciadas e percepções sobre os problemas existentes no local.</p>
+
+      <p>O segundo questionário era preenchido por nós, estudantes de Engenharia Civil, a partir da nossa própria observação técnica do entorno. Analisamos aspectos como condições dos taludes, possíveis pontos de alagamento, sinais de umidade nos muros e nas residências, características do terreno e outras situações que poderiam indicar algum tipo de risco.</p>
+
+      <blockquote class="p-3 my-4 rounded-3 border-start border-4" style="background-color: var(--creme); border-color: var(--verde-escuro) !important;">
+        <p class="mb-0 fw-semibold" style="color: var(--verde-escuro); text-align: left;">
+          “Uma coisa é analisar o bairro como estudante de Engenharia, outra é ouvir quem mora ali todos os dias. Conversando com os moradores, conseguimos perceber detalhes que só a análise técnica não mostraria.”
+        </p>
+        <cite style="font-size: 14px;">Maria Clara — estudante de Engenharia Civil</cite>
+      </blockquote>
+      
+      <p>A chuva acabou tornando a visita ainda mais importante. Em vez de adiarmos a atividade, entendemos que aquele também era um momento interessante para observar o bairro em uma condição diferente e, principalmente, manter o contato que havíamos planejado com a comunidade.</p>
+
+      <p>Ao final de cada entrevista, também entregamos aos moradores o folder que havíamos preparado anteriormente, com informações sobre as áreas de risco do bairro, sinais de alerta, orientações de prevenção e contatos de emergência. Assim, além de coletarmos informações, também conseguimos levar um pouco do conhecimento desenvolvido pelo projeto até as pessoas.</p>
+      
+      <p>Nessa primeira etapa das entrevistas, conseguimos conversar com cerca de 15 moradores. Cada relato trouxe uma percepção diferente sobre o bairro e ajudou a complementar aquilo que conseguimos enxergar apenas por meio das análises técnicas.</p>
+
+      <p>Mais do que preencher questionários, essa visita nos permitiu ouvir quem vive diariamente naquela realidade. Aos poucos, estamos juntando o conhecimento aprendido em sala de aula, nossas observações em campo e a experiência dos próprios moradores para construir uma visão cada vez mais completa sobre o bairro Olaria.</p>
+    `,
+  },
 ];
 
 // Disponível no escopo global
