@@ -193,7 +193,7 @@ const noticiasDados = [
     id: 6,
     titulo:
       "Experiência com moradores orienta melhorias no questionário de entrevistas",
-    categoria: "PREVENÇÃO",
+    categoria: "ENGENHARIA",
     data: "05 de outubro de 2026",
     descricao:
       "Após a segunda visita, compartilhamos nossas experiências e aprimoramos o questionário para as próximas entrevistas.",
@@ -228,11 +228,11 @@ const noticiasDados = [
     id: 7,
     titulo:
       "Estudantes preparam atividade de cartografia social para escola de ensino médio",
-    categoria: "PREVENÇÃO",
+    categoria: "ENGENHARIA",
     data: "26 de outubro de 2026",
     descricao:
       "Organizamos os materiais e planejamos uma atividade de cartografia social que será realizada com alunos do ensino médio.",
-    img: "img/noticia52.jpeg",
+    img: "img/noticia7.png",
     conteudo: `
       <p class="subtitulo"><strong><i>Em sala de aula, nos organizamos para preparar uma atividade de cartografia social que será realizada com alunos do ensino médio. Dividimos as tarefas entre os grupos e desenvolvemos os materiais que serão utilizados na escola E.E. Benedita Pinto Ferreira localizada no bairro Jardim Casa Branca, buscando tornar a atividade mais dinâmica e participativa.</i></strong></p>
       
