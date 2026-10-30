@@ -199,7 +199,7 @@ const noticiasDados = [
       "Após a segunda visita, compartilhamos nossas experiências e aprimoramos o questionário para as próximas entrevistas.",
     img: "img/noticia6.png",
     conteudo: `
-      <p class="subtitulo"><strong><i>Após a segunda visita ao bairro Olaria, nos reunimos em sala de aula, no dia 5 de outubro, para compartilhar as experiências das entrevistas com os moradores. A partir dos relatos dos grupos, identificamos alguns pontos que poderiam ser melhorados no questionário utilizado durante a visita, buscando tornar as próximas entrevistas mais simples, organizadas e confortáveis para os participantes.</i></strong></p>
+      <p class="subtitulo"><strong><i>Após a segunda visita ao bairro Olaria, nos reunimos em sala de aula, no dia 5 de outubro, para compartilhar as experiências das entrevistas com os moradores. Com base nos relatos, identificamos melhorias no questionário para tornar as próximas entrevistas mais simples, organizadas e confortáveis para os participantes.</i></strong></p>
       
       <p>Durante a aula, cada grupo teve a oportunidade de contar como foi a experiência de conversar com os moradores, compartilhar suas impressões sobre a visita e comentar as dificuldades encontradas durante as entrevistas. Esse momento foi importante para entendermos como o questionário funcionou na prática e quais aspectos precisavam de ajustes.</p>
       
