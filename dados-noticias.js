@@ -154,7 +154,7 @@ const noticiasDados = [
     `,
   },
 
-    {
+  {
     id: 5,
     titulo:
       "Segunda visita ao bairro Olaria aproxima estudantes e moradores",
@@ -186,6 +186,74 @@ const noticiasDados = [
       <p>Nessa primeira etapa das entrevistas, conseguimos conversar com cerca de 13 moradores. Cada relato trouxe uma percepção diferente sobre o bairro e ajudou a complementar aquilo que conseguimos enxergar apenas por meio das análises técnicas.</p>
 
       <p>Mais do que preencher questionários, essa visita nos permitiu ouvir quem vive diariamente naquela realidade. Aos poucos, estamos juntando o conhecimento aprendido em sala de aula, nossas observações em campo e a experiência dos próprios moradores para construir uma visão cada vez mais completa sobre o bairro Olaria.</p>
+    `,
+  },
+
+  {
+    id: 6,
+    titulo:
+      "Experiência com moradores orienta melhorias no questionário de entrevistas",
+    categoria: "PREVENÇÃO",
+    data: "05 de outubro de 2026",
+    descricao:
+      "Após a segunda visita, compartilhamos nossas experiências e aprimoramos o questionário para as próximas entrevistas.",
+    img: "img/noticia52.jpeg",
+    conteudo: `
+      <p class="subtitulo"><strong><i>Após a segunda visita ao bairro Olaria, nos reunimos em sala de aula, no dia 5 de outubro, para compartilhar as experiências das entrevistas com os moradores. A partir dos relatos dos grupos, identificamos alguns pontos que poderiam ser melhorados no questionário utilizado durante a visita, buscando tornar as próximas entrevistas mais simples, organizadas e confortáveis para os participantes.</i></strong></p>
+      
+      <p>Durante a aula, cada grupo teve a oportunidade de contar como foi a experiência de conversar com os moradores, compartilhar suas impressões sobre a visita e comentar as dificuldades encontradas durante as entrevistas. Esse momento foi importante para entendermos como o questionário funcionou na prática e quais aspectos precisavam de ajustes.</p>
+      
+      <p>Ao reunirmos os relatos, percebemos que o formulário estava muito extenso e que algumas perguntas acabavam deixando os moradores um pouco desconfortáveis. Além disso, notamos que a sequência de determinadas questões poderia ser melhor organizada para que a conversa acontecesse de maneira mais natural.</p>
+
+      <p>Diante dessas observações, o professor propôs que fizéssemos uma revisão do questionário, reduzindo a quantidade de perguntas e reformulando aquelas que poderiam ser mais claras e objetivas. Para isso, o formulário foi dividido em três partes, e cada grupo ficou responsável por analisar uma delas.</p>
+      
+      <p>Durante a atividade, discutimos quais perguntas realmente eram necessárias, quais poderiam ser retiradas e como poderíamos melhorar a forma de abordar determinados assuntos. Também reorganizamos a ordem das questões, procurando criar uma sequência mais lógica, em que uma pergunta se relacionasse com a seguinte, evitando mudanças muito repentinas de assunto.</p>
+
+      <blockquote class="p-3 my-4 rounded-3 border-start border-4" style="background-color: var(--creme); border-color: var(--verde-escuro) !important;">
+        <p class="mb-0 fw-semibold" style="color: var(--verde-escuro); text-align: left;">
+          “Depois de conversar com os moradores, percebemos que algumas perguntas precisavam ser melhoradas. Essa experiência nos ajudou a tornar o questionário mais simples e confortável para as próximas entrevistas.”
+        </p>
+        <cite style="font-size: 14px;">Giovanna Nicolau — estudante de Engenharia Civil</cite>'
+      </blockquote>
+
+      <p>Ao final, cada grupo apresentou suas sugestões ao professor, para que pudéssemos avaliar se as alterações estavam coerentes com os objetivos do projeto e se o questionário continuava reunindo as informações necessárias para nossas análises.</p>
+      
+      <p>Essa atividade nos mostrou a importância de colocar em prática aquilo que planejamos em sala de aula. Foi a partir do primeiro contato com os moradores que conseguimos perceber dificuldades que talvez não tivéssemos identificado apenas durante a elaboração do formulário.</p>
+
+      <p>Com essa experiência, conseguimos aperfeiçoar o questionário e nos preparar melhor para a próxima visita ao bairro Olaria, buscando tornar as entrevistas mais naturais e respeitosas, sem deixar de coletar informações importantes para o desenvolvimento do projeto.</p>
+    `,
+  },
+
+  {
+    id: 7,
+    titulo:
+      "Estudantes preparam atividade de cartografia social para escola de ensino médio",
+    categoria: "PREVENÇÃO",
+    data: "26 de outubro de 2026",
+    descricao:
+      "Organizamos os materiais e planejamos uma atividade de cartografia social que será realizada com alunos do ensino médio.",
+    img: "img/noticia52.jpeg",
+    conteudo: `
+      <p class="subtitulo"><strong><i>Em sala de aula, nos organizamos para preparar uma atividade de cartografia social que será realizada com alunos do ensino médio. Dividimos as tarefas entre os grupos e desenvolvemos os materiais que serão utilizados na escola, buscando tornar a atividade mais dinâmica e participativa.</i></strong></p>
+      
+      <p>Para organizar a atividade, cada grupo ficou responsável por uma parte da preparação. O primeiro elaborou a apresentação que será utilizada para explicar aos alunos o que é a cartografia social e como a atividade irá funcionar. O segundo ficou responsável pela preparação do mapa, enquanto o terceiro desenvolveu as legendas que serão utilizadas pelos estudantes durante a atividade.</p>
+      
+      <p>A proposta é utilizar o mapa e as legendas para que os alunos possam representar suas percepções sobre o território onde vivem, compartilhando seus conhecimentos e experiências sobre o local. Dessa forma, buscamos conhecer melhor a visão dos estudantes e entender como eles percebem os espaços ao seu redor.</p>
+
+      <p>Depois que os materiais ficaram prontos, cada grupo apresentou o que havia desenvolvido para os demais colegas e para o professor. Esse momento foi importante para conferirmos se todas as partes estavam organizadas e se os materiais funcionariam bem juntos durante a atividade.</p>
+      
+      <p>Além disso, o professor nos orientou sobre como deveríamos conduzir a cartografia social na escola, explicando a dinâmica da atividade e como poderíamos auxiliar os alunos durante sua realização.</p>
+
+      <blockquote class="p-3 my-4 rounded-3 border-start border-4" style="background-color: var(--creme); border-color: var(--verde-escuro) !important;">
+        <p class="mb-0 fw-semibold" style="color: var(--verde-escuro); text-align: left;">
+          “Preparar essa atividade nos ajudou a entender melhor como funciona a cartografia social e como podemos trabalhar com os alunos para conhecer a visão deles sobre o lugar onde vivem.”
+        </p>
+        <cite style="font-size: 14px;">Yasmin Paz — estudante de Engenharia Civil</cite>'
+      </blockquote>
+
+      <p>Durante o planejamento, também precisamos antecipar a data da visita à escola, devido à aplicação do Provão Paulista, que estava prevista para começar nas escolas. Com essa mudança, reorganizamos nosso cronograma para que a atividade pudesse acontecer antes do período de avaliações.</p>
+      
+      <p>Essa preparação foi importante para alinharmos os materiais, esclarecermos nossas dúvidas e nos organizarmos para o contato com os estudantes. Agora, com as atividades planejadas, esperamos colocar em prática o que desenvolvemos em sala de aula e conhecer um pouco mais sobre o território a partir da percepção dos próprios alunos.</p>
     `,
   },
 ];
