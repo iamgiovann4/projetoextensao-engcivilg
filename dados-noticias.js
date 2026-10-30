@@ -234,7 +234,7 @@ const noticiasDados = [
       "Organizamos os materiais e planejamos uma atividade de cartografia social que será realizada com alunos do ensino médio.",
     img: "img/noticia52.jpeg",
     conteudo: `
-      <p class="subtitulo"><strong><i>Em sala de aula, nos organizamos para preparar uma atividade de cartografia social que será realizada com alunos do ensino médio. Dividimos as tarefas entre os grupos e desenvolvemos os materiais que serão utilizados na escola, buscando tornar a atividade mais dinâmica e participativa.</i></strong></p>
+      <p class="subtitulo"><strong><i>Em sala de aula, nos organizamos para preparar uma atividade de cartografia social que será realizada com alunos do ensino médio. Dividimos as tarefas entre os grupos e desenvolvemos os materiais que serão utilizados na escola E.E. Benedita Pinto Ferreira, buscando tornar a atividade mais dinâmica e participativa.</i></strong></p>
       
       <p>Para organizar a atividade, cada grupo ficou responsável por uma parte da preparação. O primeiro elaborou a apresentação que será utilizada para explicar aos alunos o que é a cartografia social e como a atividade irá funcionar. O segundo ficou responsável pela preparação do mapa, enquanto o terceiro desenvolveu as legendas que serão utilizadas pelos estudantes durante a atividade.</p>
       
