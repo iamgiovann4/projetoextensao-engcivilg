@@ -248,7 +248,7 @@ const noticiasDados = [
         <p class="mb-0 fw-semibold" style="color: var(--verde-escuro); text-align: left;">
           “Preparar essa atividade nos ajudou a entender melhor como funciona a cartografia social e como podemos trabalhar com os alunos para conhecer a visão deles sobre o lugar onde vivem.”
         </p>
-        <cite style="font-size: 14px;">Yasmin Paz — estudante de Engenharia Civil</cite>'
+        <cite style="font-size: 14px;">Yasmin Paz — estudante de Engenharia Civil</cite>
       </blockquote>
 
       <p>Durante o planejamento, também precisamos antecipar a data da visita à escola, devido à aplicação do Provão Paulista, que estava prevista para começar nas escolas. Com essa mudança, reorganizamos nosso cronograma para que a atividade pudesse acontecer antes do período de avaliações.</p>
