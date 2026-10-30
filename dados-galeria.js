@@ -236,6 +236,36 @@ const galeriaDados = [
     alt: "",
     legenda: 'Alunos do IFSP.',
   },
+  {
+    id: 40,
+    src: "img/galeria35.jpeg",
+    alt: "",
+    legenda: 'Alunos do IFSP.',
+  },
+  {
+    id: 41,
+    src: "img/galeria36.jpeg",
+    alt: "",
+    legenda: 'Alunos do IFSP.',
+  },
+  {
+    id: 42,
+    src: "img/galeria37.jpeg",
+    alt: "",
+    legenda: 'Alunos do IFSP.',
+  },
+  {
+    id: 43,
+    src: "img/galeria38.jpeg",
+    alt: "",
+    legenda: 'Alunos do IFSP.',
+  },
+  {
+    id: 44,
+    src: "img/galeria39.jpeg",
+    alt: "",
+    legenda: 'Alunos do IFSP.',
+  },
 ];
 
 if (typeof window !== "undefined") {
