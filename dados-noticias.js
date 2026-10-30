@@ -197,7 +197,7 @@ const noticiasDados = [
     data: "05 de outubro de 2026",
     descricao:
       "Após a segunda visita, compartilhamos nossas experiências e aprimoramos o questionário para as próximas entrevistas.",
-    img: "img/noticia52.jpeg",
+    img: "img/noticia6.png",
     conteudo: `
       <p class="subtitulo"><strong><i>Após a segunda visita ao bairro Olaria, nos reunimos em sala de aula, no dia 5 de outubro, para compartilhar as experiências das entrevistas com os moradores. A partir dos relatos dos grupos, identificamos alguns pontos que poderiam ser melhorados no questionário utilizado durante a visita, buscando tornar as próximas entrevistas mais simples, organizadas e confortáveis para os participantes.</i></strong></p>
       
