@@ -199,7 +199,7 @@ const noticiasDados = [
       "Após a segunda visita, compartilhamos nossas experiências e aprimoramos o questionário para as próximas entrevistas.",
     img: "img/noticia6.png",
     conteudo: `
-      <p class="subtitulo"><strong><i>Após a segunda visita ao bairro Olaria, nos reunimos em sala de aula, no dia 5 de outubro, para compartilhar as experiências das entrevistas com os moradores. Com base nos relatos, identificamos melhorias no questionário para tornar as próximas entrevistas mais simples, organizadas e confortáveis para os participantes.</i></strong></p>
+      <p class="subtitulo"><strong><i>Após a segunda visita ao bairro Olaria, nos reunimos em sala de aula, para compartilhar as experiências das entrevistas com os moradores. Com base nos relatos, identificamos melhorias no questionário para tornar as próximas entrevistas mais simples, organizadas e confortáveis para os participantes.</i></strong></p>
       
       <p>Durante a aula, cada grupo teve a oportunidade de contar como foi a experiência de conversar com os moradores, compartilhar suas impressões sobre a visita e comentar as dificuldades encontradas durante as entrevistas. Esse momento foi importante para entendermos como o questionário funcionou na prática e quais aspectos precisavam de ajustes.</p>
       
@@ -234,7 +234,7 @@ const noticiasDados = [
       "Organizamos os materiais e planejamos uma atividade de cartografia social que será realizada com alunos do ensino médio.",
     img: "img/noticia7.png",
     conteudo: `
-      <p class="subtitulo"><strong><i>Em sala de aula, nos organizamos para preparar uma atividade de cartografia social que será realizada com alunos do ensino médio. Dividimos as tarefas entre os grupos e desenvolvemos os materiais que serão utilizados na escola E.E. Benedita Pinto Ferreira localizada no bairro Jardim Casa Branca, buscando tornar a atividade mais dinâmica e participativa.</i></strong></p>
+      <p class="subtitulo"><strong><i>Em sala de aula, nos organizamos para preparar uma atividade de cartografia social que será realizada com alunos do ensino médio. Dividimos as tarefas entre os grupos e desenvolvemos os materiais que serão utilizados na escola E.E. Benedita Pinto Ferreira, buscando tornar a atividade mais dinâmica e participativa.</i></strong></p>
       
       <p>Para organizar a atividade, cada grupo ficou responsável por uma parte da preparação. O primeiro elaborou a apresentação que será utilizada para explicar aos alunos o que é a cartografia social e como a atividade irá funcionar. O segundo ficou responsável pela preparação do mapa, enquanto o terceiro desenvolveu as legendas que serão utilizadas pelos estudantes durante a atividade.</p>
       
