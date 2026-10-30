@@ -213,7 +213,7 @@ const noticiasDados = [
         <p class="mb-0 fw-semibold" style="color: var(--verde-escuro); text-align: left;">
           “Depois de conversar com os moradores, percebemos que algumas perguntas precisavam ser melhoradas. Essa experiência nos ajudou a tornar o questionário mais simples e confortável para as próximas entrevistas.”
         </p>
-        <cite style="font-size: 14px;">Giovanna Nicolau — estudante de Engenharia Civil</cite>'
+        <cite style="font-size: 14px;">Giovanna Nicolau — estudante de Engenharia Civil</cite>
       </blockquote>
 
       <p>Ao final, cada grupo apresentou suas sugestões ao professor, para que pudéssemos avaliar se as alterações estavam coerentes com os objetivos do projeto e se o questionário continuava reunindo as informações necessárias para nossas análises.</p>
